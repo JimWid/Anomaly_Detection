@@ -23,7 +23,7 @@ def build_train_transforms() -> A.Compose:
     """
     PREPROCESS-1: Build the training image transform pipeline.
 
-    Create an albumentations.Compose pipeline that applies these
+    Creates an albumentations.Compose pipeline that applies these
     transforms in order:
         1. Resize to IMAGE_SIZE (256, 256)
         2. Horizontal flip with probability 0.5
@@ -33,20 +33,19 @@ def build_train_transforms() -> A.Compose:
 
     Returns:
         A.Compose: The training transform pipeline.
-
-    Hint:
-        A.Compose([
-            A.Resize(height, width),
-            A.SomeTransform(p=probability),
-            ...
-            A.Normalize(mean=..., std=...),
-            ToTensorV2(),
-        ])
     """
+
     # ┌──────────────────────────────────────────────┐
     # │  PREPROCESS-1: Write your code below         │
     # └──────────────────────────────────────────────┘
-    raise NotImplementedError("PREPROCESS-1: Implement training transforms")
+
+    return A.Compose([
+        A.Resize(256, 256),
+        A.HorizontalFlip(p=0.5),
+        A.RandomBrightnessContrast(p=0.3),
+        A.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
+        ToTensorV2()
+    ])
 
 
 def build_val_transforms() -> A.Compose:
@@ -54,7 +53,7 @@ def build_val_transforms() -> A.Compose:
     PREPROCESS-2: Build the validation/test image transform pipeline.
 
     This pipeline should be deterministic (no random augmentation).
-    Apply these transforms in order:
+    Applies these transforms in order:
         1. Resize to IMAGE_SIZE (256, 256)
         2. Normalize using IMAGENET_MEAN and IMAGENET_STD
         3. Convert to PyTorch tensor with ToTensorV2()
@@ -62,14 +61,20 @@ def build_val_transforms() -> A.Compose:
     Returns:
         A.Compose: The validation/test transform pipeline.
     """
+
     # ┌──────────────────────────────────────────────┐
     # │  PREPROCESS-2: Write your code below         │
     # └──────────────────────────────────────────────┘
-    raise NotImplementedError("PREPROCESS-2: Implement validation transforms")
+
+    return A.Compose([
+        A.Resize(256, 256),
+        A.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
+        ToTensorV2()
+    ])
+
 
 
 # ── Scaffold — provided for Grad-CAM overlay ──────────────────
-
 def overlay_gradcam(
     image: np.ndarray,
     heatmap: np.ndarray,

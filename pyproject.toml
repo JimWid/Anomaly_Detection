@@ -1,0 +1,35 @@
+[project]
+name = "anomaly_detection"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anomalib",
+    "opencv-python",
+    "numpy",
+    "Pillow",
+    "streamlit",
+    "pandas",
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "streamlit",
+    "scikit-learn",
+    "mkdocs",
+    "mkdocs-material",
+    "pytest",
+    "ruff",
+    "torchinfo",
+    "albumentations"
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
