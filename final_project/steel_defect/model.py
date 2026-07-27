@@ -67,7 +67,55 @@ class SteelCNN(nn.Module):
         # ┌──────────────────────────────────────────────┐
         # │  MODEL-1: Write your code below              │
         # └──────────────────────────────────────────────┘
-        raise NotImplementedError("MODEL-1: Define CNN layers in __init__")
+
+        super().__init__()
+        
+        self.residual_block_1 = nn.Sequential(
+            nn.Conv2d(3, 32, kernel_size=3, padding=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+        self.shortcut_1 = nn.Sequential(
+            nn.Conv2d(3, 32, kernel_size=1, stride=2),
+            nn.BatchNorm2d(32)
+        )
+
+        self.residual_block_2 = nn.Sequential(
+            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+        self.shortcut_2 = nn.Sequential(
+            nn.Conv2d(32, 64, kernel_size=1, stride=2),
+            nn.BatchNorm2d(64)
+        )
+
+        self.residual_block_3 = nn.Sequential(
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
+            nn.BatchNorm2d(128),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+        
+        self.shortcut_3 = nn.Sequential(
+            nn.Conv2d(64, 128, kernel_size=1, stride=2),
+            nn.BatchNorm2d(128)
+        )
+
+        self.pool = nn.AdaptiveAvgPool2d(1)
+
+        self.classifier = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(128, 64),
+            nn.ReLU(),
+            nn.Dropout(0.3),
+            nn.Linear(64, num_classes)
+        )
+
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """
@@ -94,7 +142,26 @@ class SteelCNN(nn.Module):
         # ┌──────────────────────────────────────────────┐
         # │  MODEL-2: Write your code below              │
         # └──────────────────────────────────────────────┘
-        raise NotImplementedError("MODEL-2: Implement forward pass")
+
+        # Residual 1
+        identity = x
+        x1 = self.residual_block_1(x) + self.shortcut_1(identity)
+
+        # Residual 2
+        identity = x1
+        x2 = self.residual_block_2(x1) + self.shortcut_2(identity)
+
+        # Residual 3
+        identity = x2
+        x3 = self.residual_block_3(x2) + self.shortcut_3(identity)
+
+        # Avg Pooling
+        x = self.pool(x3)
+
+        # Classifier to number of classes
+        output = self.classifier(x)
+
+        return output
 
     @property
     def num_parameters(self) -> int:
