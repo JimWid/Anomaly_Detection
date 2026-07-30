@@ -85,12 +85,23 @@ class SteelPredictor:
             The checkpoint dict has keys: "model_state_dict", "optimizer_state_dict",
             "epoch", "best_val_acc", "num_classes"
         """
+        
         start = time.perf_counter()
 
         # ┌──────────────────────────────────────────────┐
         # │  INFER-1: Write your code below              │
         # └──────────────────────────────────────────────┘
-        raise NotImplementedError("INFER-1: Load model from checkpoint")
+        
+        if not self.checkpoint_path.exists():
+            raise FileNotFoundError(f"Checkpoint not found: {self.checkpoint_path}")
+
+        checkpoint = torch.load(self.checkpoint_path, map_location=self.device)
+        model = SteelCNN(num_classes=NUM_CLASSES)
+        model.load_state_dict(checkpoint["model_state_dict"])
+        model.to(self.device)
+        model.eval()
+
+        self.model = model
 
         elapsed_ms = (time.perf_counter() - start) * 1000
         logger.info("Model loaded | time=%.0fms", elapsed_ms)
@@ -133,11 +144,27 @@ class SteelPredictor:
             self.load_model()
 
         start = time.perf_counter()
-
         # ┌──────────────────────────────────────────────┐
         # │  INFER-2: Write your code below              │
         # └──────────────────────────────────────────────┘
-        raise NotImplementedError("INFER-2: Implement prediction pipeline")
+        
+        result = self.transform(image=image)
+        tensor = result["image"]
+        tensor = tensor.unsqueeze(0)
+        tensor = tensor.to(self.device)
+
+        with torch.no_grad():
+            logits = self.model(tensor)
+
+        probs = F.softmax(logits, dim=1)
+        confidence, predicted = probs.max(dim=1)
+
+        probs_np = probs.squeeze().cpu().numpy()
+        class_scores = {name: float(p) for name, p in zip(CLASS_NAMES, probs_np)}
+
+        predicted_idx = predicted.item()
+        label = CLASS_NAMES[predicted_idx]
+        confidence_val = confidence.item()
 
         elapsed_ms = (time.perf_counter() - start) * 1000
         self._inference_count += 1

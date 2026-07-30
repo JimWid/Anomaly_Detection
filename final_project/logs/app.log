@@ -30,3 +30,80 @@
 2026-07-27 13:18:51 | INFO     | steel_defect.dataset      | SteelDataset created | samples=20 | transform=yes
 2026-07-27 13:18:51 | INFO     | steel_defect.dataset      | SteelDataset created | samples=20 | transform=none
 2026-07-27 13:18:51 | INFO     | steel_defect.dataset      | SteelDataset created | samples=20 | transform=none
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_model_is_none_before_load0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_model_loaded_after_call0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_model_is_steel_cnn0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_model_in_eval_mode0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_missing_checkpoint_raises0\nonexistent.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_model_has_correct_num_cla0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_returns_dict0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_has_required_keys0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_label_is_valid_class0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_confidence_in_range0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_predicted_idx_is_int0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_predicted_idx_matches_lab0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_class_scores_has_all_clas0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_class_scores_sum_to_one0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_class_scores_are_floats0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_latency_is_positive0\test_checkpoint.pt | device=cpu
+2026-07-30 14:43:37 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-10\test_auto_loads_model0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_model_is_none_before_load0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_model_loaded_after_call0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_model_is_steel_cnn0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_model_in_eval_mode0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_missing_checkpoint_raises0\nonexistent.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_model_has_correct_num_cla0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_returns_dict0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_has_required_keys0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_label_is_valid_class0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_confidence_in_range0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_predicted_idx_is_int0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_predicted_idx_matches_lab0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_class_scores_has_all_clas0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_class_scores_sum_to_one0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_class_scores_are_floats0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_latency_is_positive0\test_checkpoint.pt | device=cpu
+2026-07-30 14:44:23 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-11\test_auto_loads_model0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_model_is_none_before_load0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_model_loaded_after_call0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=17ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_model_is_steel_cnn0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=12ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_model_in_eval_mode0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=13ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_missing_checkpoint_raises0\nonexistent.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_model_has_correct_num_cla0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=12ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_returns_dict0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=14ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Inference #1 | label=defect_1 | confidence=0.247 | time=16.2ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_has_required_keys0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=11ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Inference #1 | label=defect_4 | confidence=0.252 | time=8.0ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_label_is_valid_class0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=11ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Inference #1 | label=defect_1 | confidence=0.241 | time=7.8ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_confidence_in_range0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=12ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Inference #1 | label=no_defect | confidence=0.283 | time=7.5ms
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_predicted_idx_is_int0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:00 | INFO     | steel_defect.inference    | Model loaded | time=12ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=defect_2 | confidence=0.241 | time=7.6ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_predicted_idx_matches_lab0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=10ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=defect_2 | confidence=0.254 | time=7.6ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_class_scores_has_all_clas0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=11ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=defect_4 | confidence=0.225 | time=7.3ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_class_scores_sum_to_one0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=11ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=no_defect | confidence=0.244 | time=7.6ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_class_scores_are_floats0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=12ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=defect_1 | confidence=0.237 | time=6.3ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_latency_is_positive0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=11ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=defect_4 | confidence=0.266 | time=7.7ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_auto_loads_model0\test_checkpoint.pt | device=cpu
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=13ms
+2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=no_defect | confidence=0.237 | time=7.8ms
