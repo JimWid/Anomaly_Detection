@@ -295,7 +295,25 @@ def display_result(result: dict, image: np.ndarray, source: str):
     # │  stats_latency, and stats_scores using the result    │
     # │  dict. See docstring above for details.              │
     # └──────────────────────────────────────────────────────┘
-    raise NotImplementedError("APP-1: Wire prediction results into Streamlit display")
+    
+    label = result["label"]
+    confidence = result["confidence"]
+    latency_ms = result["latency_ms"]
+
+    stats_header.subheader("Prediction")
+
+    if label is "no_defect": 
+        stats_label.success(f"✅ **{label}**")
+    else:
+        stats_label.error(f"🔴 **{label}**")
+
+    stats_confidence.metric("Confidence", f"{confidence:.1%}")
+
+    stats_latency.metric("Latency", f"{latency_ms:.0f} ms")
+
+    with stats_scores.container():
+        for class_name, score in result["class_scores"].items():
+            st.progress(score, text=f"{class_name}: {score:.1%}")
 
 
 def display_history():

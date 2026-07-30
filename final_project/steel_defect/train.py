@@ -12,7 +12,6 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from tqdm import tqdm
 
 from steel_defect.utils import (
     setup_logging,
