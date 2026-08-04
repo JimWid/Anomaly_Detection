@@ -3,7 +3,7 @@
 ## Running the Streamlit App
 
 ```bash
-streamlit run anomaly_detection/app.py
+uv run streamlit run final_project/steel_defect/app.py
 ```
 
 The app opens at `http://localhost:8501` and provides:
@@ -25,13 +25,7 @@ Use the sidebar controls to:
 If you need to retrain the model (e.g., after changing image size or backbone):
 
 ```bash
-python -m anomaly_detection.train
-```
-
-Options:
-
-```bash
-python -m anomaly_detection.train --category metal_nut --data_root ./data
+python -m steel_defect.train
 ```
 
 ## Serving Documentation

@@ -13,11 +13,12 @@ theme:
 
 nav:
   - Home: index.md
-  - Architecture: model-architecture.md
+  - Project Overview: project-overview.md
+  - Model Architecture: model-architecture.md
   - Data Preprocessing: data-preprocessing.md
   - Training: training.md
-  - Results: results.md
-  - Challenges: challenges.md
+  - Results and Inference: results.md
+  - Challenges and Learnings: challenges.md
   - Installation: installation.md
   - Usage Guide: usage.md
 
