@@ -107,3 +107,207 @@
 2026-07-30 14:49:01 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Users\jimmy\AppData\Local\Temp\pytest-of-jimmy\pytest-12\test_auto_loads_model0\test_checkpoint.pt | device=cpu
 2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Model loaded | time=13ms
 2026-07-30 14:49:01 | INFO     | steel_defect.inference    | Inference #1 | label=no_defect | confidence=0.237 | time=7.8ms
+2026-08-03 18:37:45 | INFO     | __main__                  | ============================================================
+2026-08-03 18:37:45 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-03 18:37:45 | INFO     | __main__                  | ============================================================
+2026-08-03 18:37:45 | INFO     | __main__                  | Epochs:     20
+2026-08-03 18:37:45 | INFO     | __main__                  | Batch size: 32
+2026-08-03 18:37:45 | INFO     | __main__                  | LR:         0.001
+2026-08-03 18:37:45 | INFO     | __main__                  | Device:     cuda
+2026-08-03 18:37:45 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-03 18:37:45 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-03 18:37:45 | INFO     | __main__                  | Loading dataset...
+2026-08-04 12:53:02 | INFO     | __main__                  | ============================================================
+2026-08-04 12:53:02 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-04 12:53:02 | INFO     | __main__                  | ============================================================
+2026-08-04 12:53:02 | INFO     | __main__                  | Epochs:     20
+2026-08-04 12:53:02 | INFO     | __main__                  | Batch size: 32
+2026-08-04 12:53:02 | INFO     | __main__                  | LR:         0.001
+2026-08-04 12:53:02 | INFO     | __main__                  | Device:     cuda
+2026-08-04 12:53:02 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-04 12:53:02 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-04 12:53:02 | INFO     | __main__                  | Loading dataset...
+2026-08-04 12:54:03 | INFO     | __main__                  | ============================================================
+2026-08-04 12:54:03 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-04 12:54:03 | INFO     | __main__                  | ============================================================
+2026-08-04 12:54:03 | INFO     | __main__                  | Epochs:     20
+2026-08-04 12:54:03 | INFO     | __main__                  | Batch size: 32
+2026-08-04 12:54:03 | INFO     | __main__                  | LR:         0.001
+2026-08-04 12:54:03 | INFO     | __main__                  | Device:     cuda
+2026-08-04 12:54:03 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-04 12:54:03 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-04 12:54:03 | INFO     | __main__                  | Loading dataset...
+2026-08-04 12:54:04 | INFO     | __main__                  | Splits | train=8497 | val=1822 | test=1822
+2026-08-04 12:54:04 | INFO     | steel_defect.dataset      | SteelDataset created | samples=8497 | transform=yes
+2026-08-04 12:54:04 | INFO     | steel_defect.dataset      | SteelDataset created | samples=1822 | transform=yes
+2026-08-04 12:54:04 | INFO     | steel_defect.dataset      | DataLoaders created | train=266 batches | val=57 batches | batch_size=32
+2026-08-04 12:54:04 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-04 12:55:57 | INFO     | __main__                  | Epoch 1/20 | train_loss=1.0246 train_acc=0.565 | val_loss=0.9336 val_acc=0.593 | time=110.8s
+2026-08-04 12:55:57 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 12:56:57 | INFO     | __main__                  | Epoch 2/20 | train_loss=0.9485 train_acc=0.609 | val_loss=0.9085 val_acc=0.616 | time=60.4s
+2026-08-04 12:56:57 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 12:57:57 | INFO     | __main__                  | Epoch 3/20 | train_loss=0.9203 train_acc=0.623 | val_loss=0.8745 val_acc=0.642 | time=60.4s
+2026-08-04 12:57:57 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 12:58:58 | INFO     | __main__                  | Epoch 4/20 | train_loss=0.8962 train_acc=0.640 | val_loss=0.8183 val_acc=0.680 | time=60.3s
+2026-08-04 12:58:58 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:00:01 | INFO     | __main__                  | Epoch 5/20 | train_loss=0.8673 train_acc=0.651 | val_loss=0.8473 val_acc=0.668 | time=63.6s
+2026-08-04 13:01:05 | INFO     | __main__                  | Epoch 6/20 | train_loss=0.8440 train_acc=0.664 | val_loss=0.7815 val_acc=0.679 | time=63.7s
+2026-08-04 13:02:08 | INFO     | __main__                  | Epoch 7/20 | train_loss=0.8164 train_acc=0.678 | val_loss=0.7712 val_acc=0.696 | time=63.4s
+2026-08-04 13:02:08 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:03:11 | INFO     | __main__                  | Epoch 8/20 | train_loss=0.8128 train_acc=0.678 | val_loss=0.7459 val_acc=0.716 | time=63.1s
+2026-08-04 13:03:11 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:04:15 | INFO     | __main__                  | Epoch 9/20 | train_loss=0.7948 train_acc=0.691 | val_loss=0.7296 val_acc=0.712 | time=63.1s
+2026-08-04 13:05:18 | INFO     | __main__                  | Epoch 10/20 | train_loss=0.7767 train_acc=0.695 | val_loss=0.7349 val_acc=0.688 | time=63.1s
+2026-08-04 13:06:21 | INFO     | __main__                  | Epoch 11/20 | train_loss=0.7658 train_acc=0.702 | val_loss=0.7367 val_acc=0.698 | time=63.4s
+2026-08-04 13:07:25 | INFO     | __main__                  | Epoch 12/20 | train_loss=0.7410 train_acc=0.707 | val_loss=0.6604 val_acc=0.748 | time=63.9s
+2026-08-04 13:07:25 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:08:28 | INFO     | __main__                  | Epoch 13/20 | train_loss=0.7248 train_acc=0.721 | val_loss=0.6953 val_acc=0.734 | time=63.2s
+2026-08-04 13:09:31 | INFO     | __main__                  | Epoch 14/20 | train_loss=0.7006 train_acc=0.724 | val_loss=0.6390 val_acc=0.761 | time=63.1s
+2026-08-04 13:09:31 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:10:34 | INFO     | __main__                  | Epoch 15/20 | train_loss=0.6950 train_acc=0.732 | val_loss=0.8159 val_acc=0.651 | time=63.1s
+2026-08-04 13:11:36 | INFO     | __main__                  | Epoch 16/20 | train_loss=0.6842 train_acc=0.733 | val_loss=0.6458 val_acc=0.742 | time=61.6s
+2026-08-04 13:12:36 | INFO     | __main__                  | Epoch 17/20 | train_loss=0.6704 train_acc=0.741 | val_loss=0.6166 val_acc=0.771 | time=60.4s
+2026-08-04 13:12:36 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:13:37 | INFO     | __main__                  | Epoch 18/20 | train_loss=0.6534 train_acc=0.751 | val_loss=0.7217 val_acc=0.702 | time=60.4s
+2026-08-04 13:14:37 | INFO     | __main__                  | Epoch 19/20 | train_loss=0.6495 train_acc=0.748 | val_loss=0.5945 val_acc=0.776 | time=60.3s
+2026-08-04 13:14:37 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-04 13:15:37 | INFO     | __main__                  | Epoch 20/20 | train_loss=0.6389 train_acc=0.757 | val_loss=0.6323 val_acc=0.773 | time=60.4s
+2026-08-04 13:15:37 | INFO     | __main__                  | Training complete | time=1293.9s | best_val_acc=0.776
+2026-08-04 13:16:28 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt | device=cuda
+2026-08-04 13:16:28 | INFO     | steel_defect.inference    | Model loaded | time=106ms
+2026-08-04 13:16:31 | INFO     | steel_defect.inference    | Inference #1 | label=defect_3 | confidence=0.519 | time=100.8ms
+2026-08-04 13:16:32 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:33 | INFO     | steel_defect.inference    | Inference #2 | label=defect_1 | confidence=0.452 | time=3.5ms
+2026-08-04 13:16:33 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:35 | INFO     | steel_defect.inference    | Inference #3 | label=defect_1 | confidence=0.520 | time=16.5ms
+2026-08-04 13:16:35 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:36 | INFO     | steel_defect.inference    | Inference #4 | label=defect_3 | confidence=0.685 | time=16.2ms
+2026-08-04 13:16:36 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:38 | INFO     | steel_defect.inference    | Inference #5 | label=defect_1 | confidence=0.495 | time=21.4ms
+2026-08-04 13:16:38 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:39 | INFO     | steel_defect.inference    | Inference #6 | label=defect_3 | confidence=0.544 | time=35.1ms
+2026-08-04 13:16:39 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:41 | INFO     | steel_defect.inference    | Inference #7 | label=defect_3 | confidence=0.520 | time=20.9ms
+2026-08-04 13:16:41 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:42 | INFO     | steel_defect.inference    | Inference #8 | label=defect_1 | confidence=0.438 | time=23.1ms
+2026-08-04 13:16:42 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:44 | INFO     | steel_defect.inference    | Inference #9 | label=defect_3 | confidence=0.627 | time=20.8ms
+2026-08-04 13:16:44 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:46 | INFO     | steel_defect.inference    | Inference #10 | label=defect_3 | confidence=0.423 | time=22.9ms
+2026-08-04 13:16:46 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:47 | INFO     | steel_defect.inference    | Inference #11 | label=defect_3 | confidence=0.540 | time=21.3ms
+2026-08-04 13:16:47 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:49 | INFO     | steel_defect.inference    | Inference #12 | label=defect_3 | confidence=0.456 | time=20.9ms
+2026-08-04 13:16:49 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:50 | INFO     | steel_defect.inference    | Inference #13 | label=no_defect | confidence=0.737 | time=24.0ms
+2026-08-04 13:16:50 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:16:53 | INFO     | steel_defect.inference    | Inference #14 | label=defect_3 | confidence=0.519 | time=45.5ms
+2026-08-04 13:16:53 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:08 | INFO     | steel_defect.inference    | Inference #15 | label=defect_3 | confidence=0.519 | time=91.1ms
+2026-08-04 13:17:08 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:12 | INFO     | steel_defect.inference    | Inference #16 | label=defect_3 | confidence=0.519 | time=77.4ms
+2026-08-04 13:17:12 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:15 | INFO     | steel_defect.inference    | Inference #17 | label=defect_3 | confidence=0.519 | time=77.1ms
+2026-08-04 13:17:15 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:16 | INFO     | steel_defect.inference    | Inference #18 | label=defect_3 | confidence=0.519 | time=53.8ms
+2026-08-04 13:17:16 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:16 | INFO     | steel_defect.inference    | Inference #19 | label=defect_3 | confidence=0.519 | time=52.3ms
+2026-08-04 13:17:16 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:17 | INFO     | steel_defect.inference    | Inference #20 | label=defect_3 | confidence=0.519 | time=55.9ms
+2026-08-04 13:17:17 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:17 | INFO     | steel_defect.inference    | Inference #21 | label=defect_3 | confidence=0.519 | time=64.8ms
+2026-08-04 13:17:18 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:18 | INFO     | steel_defect.inference    | Inference #22 | label=defect_3 | confidence=0.519 | time=67.4ms
+2026-08-04 13:17:18 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:19 | INFO     | steel_defect.inference    | Inference #23 | label=defect_3 | confidence=0.519 | time=68.9ms
+2026-08-04 13:17:19 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:19 | INFO     | steel_defect.inference    | Inference #24 | label=defect_3 | confidence=0.519 | time=51.9ms
+2026-08-04 13:17:19 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:20 | INFO     | steel_defect.inference    | Inference #25 | label=defect_3 | confidence=0.519 | time=71.6ms
+2026-08-04 13:17:20 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:20 | INFO     | steel_defect.inference    | Inference #26 | label=defect_3 | confidence=0.519 | time=60.4ms
+2026-08-04 13:17:20 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:21 | INFO     | steel_defect.inference    | Inference #27 | label=defect_3 | confidence=0.519 | time=43.3ms
+2026-08-04 13:17:21 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:21 | INFO     | steel_defect.inference    | Inference #28 | label=defect_3 | confidence=0.519 | time=43.7ms
+2026-08-04 13:17:21 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:22 | INFO     | steel_defect.inference    | Inference #29 | label=defect_3 | confidence=0.519 | time=45.5ms
+2026-08-04 13:17:22 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:23 | INFO     | steel_defect.inference    | Inference #30 | label=defect_3 | confidence=0.519 | time=42.8ms
+2026-08-04 13:17:23 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:23 | INFO     | steel_defect.inference    | Inference #31 | label=defect_3 | confidence=0.519 | time=43.7ms
+2026-08-04 13:17:23 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:24 | INFO     | steel_defect.inference    | Inference #32 | label=defect_3 | confidence=0.519 | time=23.7ms
+2026-08-04 13:17:24 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:25 | INFO     | steel_defect.inference    | Inference #33 | label=defect_1 | confidence=0.452 | time=21.2ms
+2026-08-04 13:17:25 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:27 | INFO     | steel_defect.inference    | Inference #34 | label=defect_1 | confidence=0.520 | time=23.5ms
+2026-08-04 13:17:27 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:28 | INFO     | steel_defect.inference    | Inference #35 | label=defect_3 | confidence=0.685 | time=21.0ms
+2026-08-04 13:17:28 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:30 | INFO     | steel_defect.inference    | Inference #36 | label=defect_1 | confidence=0.495 | time=20.9ms
+2026-08-04 13:17:30 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:31 | INFO     | steel_defect.inference    | Inference #37 | label=defect_3 | confidence=0.544 | time=24.6ms
+2026-08-04 13:17:31 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:33 | INFO     | steel_defect.inference    | Inference #38 | label=defect_3 | confidence=0.520 | time=21.1ms
+2026-08-04 13:17:33 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:35 | INFO     | steel_defect.inference    | Inference #39 | label=defect_1 | confidence=0.438 | time=21.1ms
+2026-08-04 13:17:35 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:36 | INFO     | steel_defect.inference    | Inference #40 | label=defect_3 | confidence=0.627 | time=25.5ms
+2026-08-04 13:17:36 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:38 | INFO     | steel_defect.inference    | Inference #41 | label=defect_3 | confidence=0.423 | time=21.4ms
+2026-08-04 13:17:38 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:39 | INFO     | steel_defect.inference    | Inference #42 | label=defect_3 | confidence=0.540 | time=21.7ms
+2026-08-04 13:17:39 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:41 | INFO     | steel_defect.inference    | Inference #43 | label=defect_3 | confidence=0.456 | time=21.6ms
+2026-08-04 13:17:41 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:42 | INFO     | steel_defect.inference    | Inference #44 | label=no_defect | confidence=0.737 | time=21.3ms
+2026-08-04 13:17:42 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:44 | INFO     | steel_defect.inference    | Inference #45 | label=defect_1 | confidence=0.443 | time=20.6ms
+2026-08-04 13:17:44 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:45 | INFO     | steel_defect.inference    | Inference #46 | label=defect_3 | confidence=0.546 | time=20.7ms
+2026-08-04 13:17:45 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:51 | INFO     | steel_defect.inference    | Inference #47 | label=defect_3 | confidence=0.440 | time=21.5ms
+2026-08-04 13:17:51 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:52 | INFO     | steel_defect.inference    | Inference #48 | label=no_defect | confidence=0.621 | time=21.1ms
+2026-08-04 13:17:52 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:54 | INFO     | steel_defect.inference    | Inference #49 | label=defect_3 | confidence=0.558 | time=21.1ms
+2026-08-04 13:17:54 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:55 | INFO     | steel_defect.inference    | Inference #50 | label=defect_3 | confidence=0.509 | time=2.7ms
+2026-08-04 13:17:55 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:57 | INFO     | steel_defect.inference    | Inference #51 | label=defect_3 | confidence=0.599 | time=2.7ms
+2026-08-04 13:17:57 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:17:58 | INFO     | steel_defect.inference    | Inference #52 | label=defect_3 | confidence=0.453 | time=16.8ms
+2026-08-04 13:17:58 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:00 | INFO     | steel_defect.inference    | Inference #53 | label=defect_3 | confidence=0.450 | time=21.0ms
+2026-08-04 13:18:00 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:01 | INFO     | steel_defect.inference    | Inference #54 | label=no_defect | confidence=0.449 | time=21.3ms
+2026-08-04 13:18:01 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:03 | INFO     | steel_defect.inference    | Inference #55 | label=defect_3 | confidence=0.546 | time=21.5ms
+2026-08-04 13:18:03 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:05 | INFO     | steel_defect.inference    | Inference #56 | label=no_defect | confidence=0.683 | time=48.2ms
+2026-08-04 13:18:05 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:06 | INFO     | steel_defect.inference    | Inference #57 | label=no_defect | confidence=0.453 | time=22.5ms
+2026-08-04 13:18:06 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:08 | INFO     | steel_defect.inference    | Inference #58 | label=defect_3 | confidence=0.415 | time=26.2ms
+2026-08-04 13:18:08 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:09 | INFO     | steel_defect.inference    | Inference #59 | label=defect_3 | confidence=0.666 | time=20.9ms
+2026-08-04 13:18:09 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:09 | INFO     | steel_defect.inference    | Inference #60 | label=defect_3 | confidence=0.440 | time=50.7ms
+2026-08-04 13:18:09 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:11 | INFO     | steel_defect.inference    | Inference #61 | label=no_defect | confidence=0.621 | time=21.0ms
+2026-08-04 13:18:11 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:12 | INFO     | steel_defect.inference    | Inference #62 | label=defect_3 | confidence=0.558 | time=22.9ms
+2026-08-04 13:18:12 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:14 | INFO     | steel_defect.inference    | Inference #63 | label=defect_3 | confidence=0.509 | time=21.0ms
+2026-08-04 13:18:14 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:15 | INFO     | steel_defect.inference    | Inference #64 | label=defect_3 | confidence=0.599 | time=21.0ms
+2026-08-04 13:18:15 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:17 | INFO     | steel_defect.inference    | Inference #65 | label=defect_3 | confidence=0.453 | time=20.9ms
+2026-08-04 13:18:17 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:19 | INFO     | steel_defect.inference    | Inference #66 | label=defect_3 | confidence=0.450 | time=30.0ms
+2026-08-04 13:18:19 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:20 | INFO     | steel_defect.inference    | Inference #67 | label=no_defect | confidence=0.449 | time=21.9ms
+2026-08-04 13:18:20 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:18:22 | INFO     | steel_defect.inference    | Inference #68 | label=defect_3 | confidence=0.546 | time=23.3ms
+2026-08-04 13:18:22 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
