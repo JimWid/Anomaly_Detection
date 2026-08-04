@@ -78,9 +78,9 @@ def get_images_in_category(category: str) -> list[Path]:
 def generate_gradcam(predictor: SteelPredictor, image_tensor: torch.Tensor) -> np.ndarray:
     """Generate Grad-CAM heatmap from the last conv layer."""
     try:
-        # Get the last convolutional layer from model.features
+        # Get the last convolutional layer from model.features / this verson uses 'residual_block_3' as the last block
         target_layer = None
-        for layer in reversed(list(predictor.model.features.children())):
+        for layer in reversed(list(predictor.model.residual_block_3.children())):
             if isinstance(layer, torch.nn.Conv2d):
                 target_layer = layer
                 break

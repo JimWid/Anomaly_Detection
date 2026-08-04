@@ -311,3 +311,35 @@
 2026-08-04 13:18:20 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
 2026-08-04 13:18:22 | INFO     | steel_defect.inference    | Inference #68 | label=defect_3 | confidence=0.546 | time=23.3ms
 2026-08-04 13:18:22 | WARNING  | steel_defect.app          | Grad-CAM failed: 'SteelCNN' object has no attribute 'features'
+2026-08-04 13:37:05 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt | device=cuda
+2026-08-04 13:37:05 | INFO     | steel_defect.inference    | Model loaded | time=68ms
+2026-08-04 13:37:09 | INFO     | steel_defect.inference    | Inference #1 | label=defect_3 | confidence=0.519 | time=94.1ms
+2026-08-04 13:37:10 | INFO     | steel_defect.inference    | Inference #2 | label=defect_1 | confidence=0.452 | time=2.9ms
+2026-08-04 13:37:12 | INFO     | steel_defect.inference    | Inference #3 | label=defect_1 | confidence=0.520 | time=17.9ms
+2026-08-04 13:37:13 | INFO     | steel_defect.inference    | Inference #4 | label=defect_3 | confidence=0.685 | time=16.3ms
+2026-08-04 13:37:15 | INFO     | steel_defect.inference    | Inference #5 | label=defect_1 | confidence=0.495 | time=16.7ms
+2026-08-04 13:37:17 | INFO     | steel_defect.inference    | Inference #6 | label=defect_3 | confidence=0.544 | time=17.0ms
+2026-08-04 13:37:18 | INFO     | steel_defect.inference    | Inference #7 | label=defect_3 | confidence=0.520 | time=16.5ms
+2026-08-04 13:37:20 | INFO     | steel_defect.inference    | Inference #8 | label=defect_1 | confidence=0.438 | time=16.7ms
+2026-08-04 13:37:21 | INFO     | steel_defect.inference    | Inference #9 | label=defect_3 | confidence=0.627 | time=16.6ms
+2026-08-04 13:37:23 | INFO     | steel_defect.inference    | Inference #10 | label=defect_3 | confidence=0.423 | time=21.1ms
+2026-08-04 13:37:25 | INFO     | steel_defect.inference    | Inference #11 | label=defect_3 | confidence=0.540 | time=21.0ms
+2026-08-04 13:37:26 | INFO     | steel_defect.inference    | Inference #12 | label=defect_3 | confidence=0.456 | time=21.1ms
+2026-08-04 13:37:28 | INFO     | steel_defect.inference    | Inference #13 | label=no_defect | confidence=0.737 | time=21.0ms
+2026-08-04 13:37:29 | INFO     | steel_defect.inference    | Inference #14 | label=defect_1 | confidence=0.443 | time=20.8ms
+2026-08-04 13:37:31 | INFO     | steel_defect.inference    | Inference #15 | label=defect_3 | confidence=0.546 | time=16.4ms
+2026-08-04 13:37:33 | INFO     | steel_defect.inference    | Inference #16 | label=defect_3 | confidence=0.913 | time=17.0ms
+2026-08-04 13:37:34 | INFO     | steel_defect.inference    | Inference #17 | label=defect_1 | confidence=0.456 | time=16.8ms
+2026-08-04 13:37:36 | INFO     | steel_defect.inference    | Inference #18 | label=defect_1 | confidence=0.512 | time=16.4ms
+2026-08-04 13:37:37 | INFO     | steel_defect.inference    | Inference #19 | label=no_defect | confidence=0.540 | time=16.4ms
+2026-08-04 13:37:39 | INFO     | steel_defect.inference    | Inference #20 | label=defect_1 | confidence=0.445 | time=16.7ms
+2026-08-04 13:37:41 | INFO     | steel_defect.inference    | Inference #21 | label=defect_3 | confidence=0.589 | time=20.9ms
+2026-08-04 13:37:42 | INFO     | steel_defect.inference    | Inference #22 | label=defect_3 | confidence=0.550 | time=21.1ms
+2026-08-04 13:37:45 | INFO     | steel_defect.inference    | Inference #23 | label=no_defect | confidence=0.720 | time=23.5ms
+2026-08-04 13:37:47 | INFO     | steel_defect.inference    | Inference #24 | label=no_defect | confidence=0.874 | time=20.7ms
+2026-08-04 13:37:48 | INFO     | steel_defect.inference    | Inference #25 | label=no_defect | confidence=1.000 | time=20.9ms
+2026-08-04 13:37:50 | INFO     | steel_defect.inference    | Inference #26 | label=defect_3 | confidence=0.533 | time=20.8ms
+2026-08-04 13:37:52 | INFO     | steel_defect.inference    | Inference #27 | label=no_defect | confidence=0.544 | time=20.9ms
+2026-08-04 13:37:53 | INFO     | steel_defect.inference    | Inference #28 | label=no_defect | confidence=0.992 | time=20.7ms
+2026-08-04 13:37:55 | INFO     | steel_defect.inference    | Inference #29 | label=no_defect | confidence=0.866 | time=16.7ms
+2026-08-04 13:37:56 | INFO     | steel_defect.inference    | Inference #30 | label=no_defect | confidence=0.705 | time=16.6ms

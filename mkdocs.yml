@@ -13,11 +13,15 @@ theme:
 
 nav:
   - Home: index.md
+  - Architecture: model-architecture.md
+  - Data Preprocessing: data-preprocessing.md
+  - Training: training.md
+  - Results: results.md
+  - Challenges: challenges.md
   - Installation: installation.md
   - Usage Guide: usage.md
-  - Architecture: architecture.md
-  - Advanced - Image Acquisition: advanced-acquisition.md
-  - Homework:
+
+  - Homework - DONE:
     - Overview: homework/index.md
     - Step 1 - Preprocessing: homework/step-1-preprocessing.md
     - Step 2 - Dataset: homework/step-2-dataset.md
