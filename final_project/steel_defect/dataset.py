@@ -69,6 +69,7 @@ def build_file_list(data_dir: Path | str | None = None) -> list[tuple[str, int]]
     # └──────────────────────────────────────────────┘
 
     results = []
+    # MAX_PER_CLASS = 1000
 
     for folder in data_dir.iterdir():
         if not folder.is_dir() or folder.name not in CLASS_NAMES:
@@ -81,6 +82,17 @@ def build_file_list(data_dir: Path | str | None = None) -> list[tuple[str, int]]
                 results.append((str(image_path), label))
 
     results.sort(key=lambda pair: pair[0])
+
+    #    folder_images = [ 
+    #        image_path for image_path in folder.iterdir() if
+    #        image_path.is_file() and image_path.suffix.lower() in IMAGE_EXTENSIONS
+    #        ]
+    #
+    #    folder_images.sort()
+    #
+    #    for image_path in folder_images[:MAX_PER_CLASS]:        
+    #            results.append((str(image_path), label))
+
     return results
 
 

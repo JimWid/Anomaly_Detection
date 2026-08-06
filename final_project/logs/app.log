@@ -343,3 +343,458 @@
 2026-08-04 13:37:53 | INFO     | steel_defect.inference    | Inference #28 | label=no_defect | confidence=0.992 | time=20.7ms
 2026-08-04 13:37:55 | INFO     | steel_defect.inference    | Inference #29 | label=no_defect | confidence=0.866 | time=16.7ms
 2026-08-04 13:37:56 | INFO     | steel_defect.inference    | Inference #30 | label=no_defect | confidence=0.705 | time=16.6ms
+2026-08-05 20:15:34 | INFO     | __main__                  | ============================================================
+2026-08-05 20:15:34 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:15:34 | INFO     | __main__                  | ============================================================
+2026-08-05 20:15:34 | INFO     | __main__                  | Epochs:     20
+2026-08-05 20:15:34 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:15:34 | INFO     | __main__                  | LR:         0.001
+2026-08-05 20:15:34 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:15:34 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:15:34 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:15:34 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:15:35 | INFO     | __main__                  | Splits | train=827 | val=178 | test=178
+2026-08-05 20:15:35 | INFO     | steel_defect.dataset      | SteelDataset created | samples=827 | transform=yes
+2026-08-05 20:15:35 | INFO     | steel_defect.dataset      | SteelDataset created | samples=178 | transform=yes
+2026-08-05 20:15:35 | INFO     | steel_defect.dataset      | DataLoaders created | train=26 batches | val=6 batches | batch_size=32
+2026-08-05 20:15:35 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:15:44 | INFO     | __main__                  | Epoch 1/20 | train_loss=1.5215 train_acc=0.290 | val_loss=1.4699 val_acc=0.421 | time=7.5s
+2026-08-05 20:15:44 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:15:50 | INFO     | __main__                  | Epoch 2/20 | train_loss=1.4490 train_acc=0.322 | val_loss=1.3720 val_acc=0.388 | time=5.9s
+2026-08-05 20:15:56 | INFO     | __main__                  | Epoch 3/20 | train_loss=1.3923 train_acc=0.401 | val_loss=1.4697 val_acc=0.354 | time=6.0s
+2026-08-05 20:16:02 | INFO     | __main__                  | Epoch 4/20 | train_loss=1.3813 train_acc=0.382 | val_loss=1.3781 val_acc=0.382 | time=5.9s
+2026-08-05 20:16:08 | INFO     | __main__                  | Epoch 5/20 | train_loss=1.3679 train_acc=0.410 | val_loss=1.3233 val_acc=0.466 | time=5.9s
+2026-08-05 20:16:08 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:16:14 | INFO     | __main__                  | Epoch 6/20 | train_loss=1.3198 train_acc=0.432 | val_loss=1.3053 val_acc=0.461 | time=5.9s
+2026-08-05 20:16:20 | INFO     | __main__                  | Epoch 7/20 | train_loss=1.3187 train_acc=0.449 | val_loss=1.2124 val_acc=0.489 | time=5.9s
+2026-08-05 20:16:20 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:16:25 | INFO     | __main__                  | Epoch 8/20 | train_loss=1.2907 train_acc=0.464 | val_loss=1.2064 val_acc=0.494 | time=5.9s
+2026-08-05 20:16:25 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:16:31 | INFO     | __main__                  | Epoch 9/20 | train_loss=1.3024 train_acc=0.472 | val_loss=1.2622 val_acc=0.528 | time=5.9s
+2026-08-05 20:16:31 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:16:37 | INFO     | __main__                  | Epoch 10/20 | train_loss=1.2738 train_acc=0.466 | val_loss=1.2969 val_acc=0.511 | time=5.9s
+2026-08-05 20:16:43 | INFO     | __main__                  | Epoch 11/20 | train_loss=1.2322 train_acc=0.484 | val_loss=1.2783 val_acc=0.528 | time=5.9s
+2026-08-05 20:16:49 | INFO     | __main__                  | Epoch 12/20 | train_loss=1.2634 train_acc=0.480 | val_loss=1.3402 val_acc=0.449 | time=5.9s
+2026-08-05 20:16:55 | INFO     | __main__                  | Epoch 13/20 | train_loss=1.2213 train_acc=0.513 | val_loss=1.1792 val_acc=0.551 | time=5.9s
+2026-08-05 20:16:55 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:17:01 | INFO     | __main__                  | Epoch 14/20 | train_loss=1.2457 train_acc=0.496 | val_loss=1.1700 val_acc=0.528 | time=5.9s
+2026-08-05 20:17:07 | INFO     | __main__                  | Epoch 15/20 | train_loss=1.2089 train_acc=0.490 | val_loss=1.1343 val_acc=0.562 | time=5.9s
+2026-08-05 20:17:07 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:17:13 | INFO     | __main__                  | Epoch 16/20 | train_loss=1.2308 train_acc=0.509 | val_loss=1.2354 val_acc=0.489 | time=5.9s
+2026-08-05 20:17:18 | INFO     | __main__                  | Epoch 17/20 | train_loss=1.1977 train_acc=0.532 | val_loss=1.1376 val_acc=0.534 | time=5.9s
+2026-08-05 20:17:24 | INFO     | __main__                  | Epoch 18/20 | train_loss=1.1790 train_acc=0.521 | val_loss=1.2271 val_acc=0.444 | time=5.9s
+2026-08-05 20:17:30 | INFO     | __main__                  | Epoch 19/20 | train_loss=1.1954 train_acc=0.531 | val_loss=1.3958 val_acc=0.438 | time=5.9s
+2026-08-05 20:17:36 | INFO     | __main__                  | Epoch 20/20 | train_loss=1.2170 train_acc=0.499 | val_loss=1.2061 val_acc=0.556 | time=5.9s
+2026-08-05 20:17:36 | INFO     | __main__                  | Training complete | time=122.1s | best_val_acc=0.562
+2026-08-05 20:20:44 | INFO     | __main__                  | ============================================================
+2026-08-05 20:20:44 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:20:44 | INFO     | __main__                  | ============================================================
+2026-08-05 20:20:44 | INFO     | __main__                  | Epochs:     50
+2026-08-05 20:20:44 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:20:44 | INFO     | __main__                  | LR:         0.1
+2026-08-05 20:20:44 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:20:44 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:20:44 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:20:44 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:20:44 | INFO     | __main__                  | Splits | train=827 | val=178 | test=178
+2026-08-05 20:20:44 | INFO     | steel_defect.dataset      | SteelDataset created | samples=827 | transform=yes
+2026-08-05 20:20:44 | INFO     | steel_defect.dataset      | SteelDataset created | samples=178 | transform=yes
+2026-08-05 20:20:44 | INFO     | steel_defect.dataset      | DataLoaders created | train=26 batches | val=6 batches | batch_size=32
+2026-08-05 20:20:44 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:20:51 | INFO     | __main__                  | Epoch 1/50 | train_loss=2.7287 train_acc=0.232 | val_loss=1.6083 val_acc=0.208 | time=6.3s
+2026-08-05 20:20:51 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:20:57 | INFO     | __main__                  | Epoch 2/50 | train_loss=1.6113 train_acc=0.208 | val_loss=1.6069 val_acc=0.208 | time=6.1s
+2026-08-05 20:21:03 | INFO     | __main__                  | Epoch 3/50 | train_loss=1.6109 train_acc=0.185 | val_loss=1.6085 val_acc=0.208 | time=6.0s
+2026-08-05 20:21:09 | INFO     | __main__                  | Epoch 4/50 | train_loss=1.6128 train_acc=0.196 | val_loss=1.6087 val_acc=0.208 | time=6.0s
+2026-08-05 20:21:15 | INFO     | __main__                  | Epoch 5/50 | train_loss=1.6106 train_acc=0.185 | val_loss=1.6108 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:21 | INFO     | __main__                  | Epoch 6/50 | train_loss=1.6142 train_acc=0.207 | val_loss=1.6070 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:27 | INFO     | __main__                  | Epoch 7/50 | train_loss=1.6125 train_acc=0.166 | val_loss=1.6071 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:33 | INFO     | __main__                  | Epoch 8/50 | train_loss=1.6111 train_acc=0.197 | val_loss=1.6090 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:39 | INFO     | __main__                  | Epoch 9/50 | train_loss=1.6116 train_acc=0.203 | val_loss=1.6123 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:45 | INFO     | __main__                  | Epoch 10/50 | train_loss=1.6134 train_acc=0.191 | val_loss=1.6076 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:51 | INFO     | __main__                  | Epoch 11/50 | train_loss=1.6078 train_acc=0.201 | val_loss=1.6092 val_acc=0.208 | time=5.9s
+2026-08-05 20:21:57 | INFO     | __main__                  | Epoch 12/50 | train_loss=1.6103 train_acc=0.191 | val_loss=1.6070 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:03 | INFO     | __main__                  | Epoch 13/50 | train_loss=1.6122 train_acc=0.207 | val_loss=1.6160 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:08 | INFO     | __main__                  | Epoch 14/50 | train_loss=1.6165 train_acc=0.177 | val_loss=1.6064 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:14 | INFO     | __main__                  | Epoch 15/50 | train_loss=1.6166 train_acc=0.195 | val_loss=1.6123 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:20 | INFO     | __main__                  | Epoch 16/50 | train_loss=1.6150 train_acc=0.204 | val_loss=1.6076 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:26 | INFO     | __main__                  | Epoch 17/50 | train_loss=1.6115 train_acc=0.200 | val_loss=1.6105 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:32 | INFO     | __main__                  | Epoch 18/50 | train_loss=1.6184 train_acc=0.197 | val_loss=1.6104 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:38 | INFO     | __main__                  | Epoch 19/50 | train_loss=1.6157 train_acc=0.187 | val_loss=1.6122 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:44 | INFO     | __main__                  | Epoch 20/50 | train_loss=1.6119 train_acc=0.224 | val_loss=1.6163 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:50 | INFO     | __main__                  | Epoch 21/50 | train_loss=1.6154 train_acc=0.204 | val_loss=1.6078 val_acc=0.208 | time=5.9s
+2026-08-05 20:22:56 | INFO     | __main__                  | Epoch 22/50 | train_loss=1.6210 train_acc=0.192 | val_loss=1.6156 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:02 | INFO     | __main__                  | Epoch 23/50 | train_loss=1.6131 train_acc=0.210 | val_loss=1.6070 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:08 | INFO     | __main__                  | Epoch 24/50 | train_loss=1.6098 train_acc=0.198 | val_loss=1.6064 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:14 | INFO     | __main__                  | Epoch 25/50 | train_loss=1.6103 train_acc=0.220 | val_loss=1.6090 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:20 | INFO     | __main__                  | Epoch 26/50 | train_loss=1.6166 train_acc=0.193 | val_loss=1.6206 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:25 | INFO     | __main__                  | Epoch 27/50 | train_loss=1.6206 train_acc=0.209 | val_loss=1.6154 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:31 | INFO     | __main__                  | Epoch 28/50 | train_loss=1.6135 train_acc=0.210 | val_loss=1.6146 val_acc=0.208 | time=5.9s
+2026-08-05 20:23:37 | INFO     | __main__                  | Epoch 29/50 | train_loss=1.6159 train_acc=0.191 | val_loss=1.6075 val_acc=0.208 | time=5.9s
+2026-08-05 20:24:07 | INFO     | __main__                  | ============================================================
+2026-08-05 20:24:07 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:24:07 | INFO     | __main__                  | ============================================================
+2026-08-05 20:24:07 | INFO     | __main__                  | Epochs:     70
+2026-08-05 20:24:07 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:24:07 | INFO     | __main__                  | LR:         0.001
+2026-08-05 20:24:07 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:24:07 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:24:07 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:24:07 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:24:08 | INFO     | __main__                  | Splits | train=827 | val=178 | test=178
+2026-08-05 20:24:08 | INFO     | steel_defect.dataset      | SteelDataset created | samples=827 | transform=yes
+2026-08-05 20:24:08 | INFO     | steel_defect.dataset      | SteelDataset created | samples=178 | transform=yes
+2026-08-05 20:24:08 | INFO     | steel_defect.dataset      | DataLoaders created | train=26 batches | val=6 batches | batch_size=32
+2026-08-05 20:24:08 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:24:15 | INFO     | __main__                  | Epoch 1/70 | train_loss=1.5264 train_acc=0.304 | val_loss=1.4595 val_acc=0.354 | time=6.1s
+2026-08-05 20:24:15 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:24:21 | INFO     | __main__                  | Epoch 2/70 | train_loss=1.4503 train_acc=0.366 | val_loss=1.4081 val_acc=0.365 | time=5.9s
+2026-08-05 20:24:21 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:24:27 | INFO     | __main__                  | Epoch 3/70 | train_loss=1.3978 train_acc=0.409 | val_loss=1.3264 val_acc=0.472 | time=5.9s
+2026-08-05 20:24:27 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:24:33 | INFO     | __main__                  | Epoch 4/70 | train_loss=1.3842 train_acc=0.403 | val_loss=1.3298 val_acc=0.455 | time=5.9s
+2026-08-05 20:24:39 | INFO     | __main__                  | Epoch 5/70 | train_loss=1.3302 train_acc=0.443 | val_loss=1.3471 val_acc=0.472 | time=5.9s
+2026-08-05 20:24:45 | INFO     | __main__                  | Epoch 6/70 | train_loss=1.3238 train_acc=0.438 | val_loss=1.3003 val_acc=0.461 | time=5.9s
+2026-08-05 20:24:51 | INFO     | __main__                  | Epoch 7/70 | train_loss=1.3274 train_acc=0.428 | val_loss=1.1955 val_acc=0.483 | time=5.9s
+2026-08-05 20:24:51 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:24:57 | INFO     | __main__                  | Epoch 8/70 | train_loss=1.3040 train_acc=0.438 | val_loss=1.2598 val_acc=0.500 | time=5.9s
+2026-08-05 20:24:57 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:25:02 | INFO     | __main__                  | Epoch 9/70 | train_loss=1.2588 train_acc=0.508 | val_loss=1.2689 val_acc=0.461 | time=5.9s
+2026-08-05 20:25:08 | INFO     | __main__                  | Epoch 10/70 | train_loss=1.2734 train_acc=0.476 | val_loss=1.5313 val_acc=0.382 | time=5.9s
+2026-08-05 20:25:14 | INFO     | __main__                  | Epoch 11/70 | train_loss=1.2804 train_acc=0.450 | val_loss=1.2950 val_acc=0.500 | time=5.9s
+2026-08-05 20:25:20 | INFO     | __main__                  | Epoch 12/70 | train_loss=1.2573 train_acc=0.490 | val_loss=1.2442 val_acc=0.472 | time=5.9s
+2026-08-05 20:25:26 | INFO     | __main__                  | Epoch 13/70 | train_loss=1.2582 train_acc=0.481 | val_loss=1.2054 val_acc=0.489 | time=5.9s
+2026-08-05 20:25:32 | INFO     | __main__                  | Epoch 14/70 | train_loss=1.2361 train_acc=0.490 | val_loss=1.1947 val_acc=0.539 | time=5.9s
+2026-08-05 20:25:32 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:25:38 | INFO     | __main__                  | Epoch 15/70 | train_loss=1.1901 train_acc=0.522 | val_loss=1.2681 val_acc=0.466 | time=5.9s
+2026-08-05 20:25:44 | INFO     | __main__                  | Epoch 16/70 | train_loss=1.2005 train_acc=0.524 | val_loss=1.2022 val_acc=0.511 | time=5.9s
+2026-08-05 20:25:50 | INFO     | __main__                  | Epoch 17/70 | train_loss=1.2321 train_acc=0.508 | val_loss=1.1429 val_acc=0.534 | time=5.9s
+2026-08-05 20:25:56 | INFO     | __main__                  | Epoch 18/70 | train_loss=1.1971 train_acc=0.519 | val_loss=1.1726 val_acc=0.517 | time=5.9s
+2026-08-05 20:26:02 | INFO     | __main__                  | Epoch 19/70 | train_loss=1.2204 train_acc=0.514 | val_loss=1.1743 val_acc=0.483 | time=5.9s
+2026-08-05 20:26:08 | INFO     | __main__                  | Epoch 20/70 | train_loss=1.1678 train_acc=0.537 | val_loss=1.0774 val_acc=0.579 | time=6.0s
+2026-08-05 20:26:08 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:26:13 | INFO     | __main__                  | Epoch 21/70 | train_loss=1.2012 train_acc=0.504 | val_loss=1.2000 val_acc=0.483 | time=5.9s
+2026-08-05 20:26:19 | INFO     | __main__                  | Epoch 22/70 | train_loss=1.1919 train_acc=0.524 | val_loss=1.1503 val_acc=0.500 | time=5.9s
+2026-08-05 20:26:25 | INFO     | __main__                  | Epoch 23/70 | train_loss=1.1672 train_acc=0.530 | val_loss=1.1835 val_acc=0.511 | time=5.9s
+2026-08-05 20:26:31 | INFO     | __main__                  | Epoch 24/70 | train_loss=1.1313 train_acc=0.555 | val_loss=1.1313 val_acc=0.539 | time=5.9s
+2026-08-05 20:26:37 | INFO     | __main__                  | Epoch 25/70 | train_loss=1.2250 train_acc=0.484 | val_loss=1.1923 val_acc=0.506 | time=5.9s
+2026-08-05 20:26:43 | INFO     | __main__                  | Epoch 26/70 | train_loss=1.1671 train_acc=0.549 | val_loss=1.1364 val_acc=0.489 | time=6.0s
+2026-08-05 20:26:49 | INFO     | __main__                  | Epoch 27/70 | train_loss=1.1525 train_acc=0.522 | val_loss=1.1164 val_acc=0.562 | time=5.9s
+2026-08-05 20:26:55 | INFO     | __main__                  | Epoch 28/70 | train_loss=1.1685 train_acc=0.528 | val_loss=1.1805 val_acc=0.522 | time=6.0s
+2026-08-05 20:27:01 | INFO     | __main__                  | Epoch 29/70 | train_loss=1.1784 train_acc=0.526 | val_loss=1.1363 val_acc=0.489 | time=6.1s
+2026-08-05 20:27:07 | INFO     | __main__                  | Epoch 30/70 | train_loss=1.1327 train_acc=0.571 | val_loss=1.5141 val_acc=0.466 | time=5.9s
+2026-08-05 20:27:13 | INFO     | __main__                  | Epoch 31/70 | train_loss=1.1494 train_acc=0.559 | val_loss=1.1383 val_acc=0.539 | time=5.9s
+2026-08-05 20:27:19 | INFO     | __main__                  | Epoch 32/70 | train_loss=1.1512 train_acc=0.555 | val_loss=1.1331 val_acc=0.596 | time=5.9s
+2026-08-05 20:27:19 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:27:25 | INFO     | __main__                  | Epoch 33/70 | train_loss=1.1561 train_acc=0.548 | val_loss=1.1720 val_acc=0.522 | time=5.9s
+2026-08-05 20:27:31 | INFO     | __main__                  | Epoch 34/70 | train_loss=1.1711 train_acc=0.533 | val_loss=1.0931 val_acc=0.596 | time=5.9s
+2026-08-05 20:27:37 | INFO     | __main__                  | Epoch 35/70 | train_loss=1.1271 train_acc=0.541 | val_loss=1.0805 val_acc=0.584 | time=5.9s
+2026-08-05 20:27:42 | INFO     | __main__                  | Epoch 36/70 | train_loss=1.1564 train_acc=0.548 | val_loss=1.2533 val_acc=0.393 | time=5.9s
+2026-08-05 20:27:48 | INFO     | __main__                  | Epoch 37/70 | train_loss=1.1542 train_acc=0.543 | val_loss=1.0657 val_acc=0.618 | time=5.9s
+2026-08-05 20:27:48 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:27:54 | INFO     | __main__                  | Epoch 38/70 | train_loss=1.1108 train_acc=0.560 | val_loss=1.0410 val_acc=0.607 | time=5.9s
+2026-08-05 20:28:00 | INFO     | __main__                  | Epoch 39/70 | train_loss=1.1067 train_acc=0.554 | val_loss=1.0250 val_acc=0.584 | time=5.9s
+2026-08-05 20:28:06 | INFO     | __main__                  | Epoch 40/70 | train_loss=1.0876 train_acc=0.566 | val_loss=1.1541 val_acc=0.534 | time=5.9s
+2026-08-05 20:28:12 | INFO     | __main__                  | Epoch 41/70 | train_loss=1.1358 train_acc=0.550 | val_loss=1.4139 val_acc=0.444 | time=6.0s
+2026-08-05 20:28:18 | INFO     | __main__                  | Epoch 42/70 | train_loss=1.0912 train_acc=0.545 | val_loss=1.0711 val_acc=0.528 | time=5.9s
+2026-08-05 20:28:24 | INFO     | __main__                  | Epoch 43/70 | train_loss=1.1081 train_acc=0.556 | val_loss=1.1288 val_acc=0.573 | time=5.9s
+2026-08-05 20:28:30 | INFO     | __main__                  | Epoch 44/70 | train_loss=1.1250 train_acc=0.547 | val_loss=0.9886 val_acc=0.629 | time=5.9s
+2026-08-05 20:28:30 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:28:36 | INFO     | __main__                  | Epoch 45/70 | train_loss=1.1204 train_acc=0.566 | val_loss=1.1087 val_acc=0.545 | time=5.9s
+2026-08-05 20:28:42 | INFO     | __main__                  | Epoch 46/70 | train_loss=1.0990 train_acc=0.563 | val_loss=1.1273 val_acc=0.539 | time=5.9s
+2026-08-05 20:28:48 | INFO     | __main__                  | Epoch 47/70 | train_loss=1.1425 train_acc=0.528 | val_loss=1.0164 val_acc=0.567 | time=5.9s
+2026-08-05 20:28:54 | INFO     | __main__                  | Epoch 48/70 | train_loss=1.0774 train_acc=0.577 | val_loss=1.0454 val_acc=0.551 | time=5.9s
+2026-08-05 20:29:00 | INFO     | __main__                  | Epoch 49/70 | train_loss=1.1254 train_acc=0.537 | val_loss=1.1381 val_acc=0.517 | time=5.9s
+2026-08-05 20:29:06 | INFO     | __main__                  | Epoch 50/70 | train_loss=1.0751 train_acc=0.584 | val_loss=1.0986 val_acc=0.489 | time=5.9s
+2026-08-05 20:29:11 | INFO     | __main__                  | Epoch 51/70 | train_loss=1.0826 train_acc=0.565 | val_loss=1.0774 val_acc=0.528 | time=5.9s
+2026-08-05 20:29:17 | INFO     | __main__                  | Epoch 52/70 | train_loss=1.0705 train_acc=0.571 | val_loss=2.2850 val_acc=0.399 | time=5.9s
+2026-08-05 20:29:23 | INFO     | __main__                  | Epoch 53/70 | train_loss=1.0622 train_acc=0.583 | val_loss=1.0489 val_acc=0.624 | time=5.9s
+2026-08-05 20:29:29 | INFO     | __main__                  | Epoch 54/70 | train_loss=1.1064 train_acc=0.576 | val_loss=1.0486 val_acc=0.607 | time=5.9s
+2026-08-05 20:29:35 | INFO     | __main__                  | Epoch 55/70 | train_loss=1.1248 train_acc=0.556 | val_loss=1.0922 val_acc=0.562 | time=5.9s
+2026-08-05 20:29:41 | INFO     | __main__                  | Epoch 56/70 | train_loss=1.1023 train_acc=0.556 | val_loss=1.1867 val_acc=0.528 | time=5.9s
+2026-08-05 20:29:47 | INFO     | __main__                  | Epoch 57/70 | train_loss=1.0376 train_acc=0.600 | val_loss=1.0487 val_acc=0.551 | time=5.9s
+2026-08-05 20:29:53 | INFO     | __main__                  | Epoch 58/70 | train_loss=1.0730 train_acc=0.563 | val_loss=1.1055 val_acc=0.545 | time=5.9s
+2026-08-05 20:29:59 | INFO     | __main__                  | Epoch 59/70 | train_loss=1.0917 train_acc=0.571 | val_loss=1.0373 val_acc=0.584 | time=5.9s
+2026-08-05 20:30:05 | INFO     | __main__                  | Epoch 60/70 | train_loss=1.0685 train_acc=0.588 | val_loss=1.0874 val_acc=0.579 | time=5.9s
+2026-08-05 20:30:11 | INFO     | __main__                  | Epoch 61/70 | train_loss=1.0801 train_acc=0.599 | val_loss=1.2372 val_acc=0.522 | time=5.9s
+2026-08-05 20:30:16 | INFO     | __main__                  | Epoch 62/70 | train_loss=1.0827 train_acc=0.574 | val_loss=1.0146 val_acc=0.618 | time=5.9s
+2026-08-05 20:30:22 | INFO     | __main__                  | Epoch 63/70 | train_loss=1.0542 train_acc=0.577 | val_loss=1.0254 val_acc=0.629 | time=5.9s
+2026-08-05 20:30:28 | INFO     | __main__                  | Epoch 64/70 | train_loss=1.0653 train_acc=0.602 | val_loss=1.0418 val_acc=0.539 | time=5.9s
+2026-08-05 20:30:34 | INFO     | __main__                  | Epoch 65/70 | train_loss=1.0586 train_acc=0.595 | val_loss=1.0022 val_acc=0.635 | time=5.9s
+2026-08-05 20:30:34 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:30:40 | INFO     | __main__                  | Epoch 66/70 | train_loss=1.0529 train_acc=0.578 | val_loss=1.0094 val_acc=0.624 | time=5.9s
+2026-08-05 20:30:46 | INFO     | __main__                  | Epoch 67/70 | train_loss=1.0297 train_acc=0.583 | val_loss=0.9665 val_acc=0.624 | time=5.9s
+2026-08-05 20:30:52 | INFO     | __main__                  | Epoch 68/70 | train_loss=1.0949 train_acc=0.579 | val_loss=1.0976 val_acc=0.562 | time=6.0s
+2026-08-05 20:30:58 | INFO     | __main__                  | Epoch 69/70 | train_loss=1.0661 train_acc=0.576 | val_loss=1.0248 val_acc=0.567 | time=5.9s
+2026-08-05 20:31:04 | INFO     | __main__                  | Epoch 70/70 | train_loss=1.0345 train_acc=0.612 | val_loss=1.1378 val_acc=0.590 | time=6.0s
+2026-08-05 20:31:04 | INFO     | __main__                  | Training complete | time=416.5s | best_val_acc=0.635
+2026-08-05 20:32:19 | INFO     | __main__                  | ============================================================
+2026-08-05 20:32:19 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:32:19 | INFO     | __main__                  | ============================================================
+2026-08-05 20:32:19 | INFO     | __main__                  | Epochs:     50
+2026-08-05 20:32:19 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:32:19 | INFO     | __main__                  | LR:         0.01
+2026-08-05 20:32:19 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:32:19 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:32:19 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:32:19 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:32:20 | INFO     | __main__                  | Splits | train=2435 | val=522 | test=523
+2026-08-05 20:32:20 | INFO     | steel_defect.dataset      | SteelDataset created | samples=2435 | transform=yes
+2026-08-05 20:32:20 | INFO     | steel_defect.dataset      | SteelDataset created | samples=522 | transform=yes
+2026-08-05 20:32:20 | INFO     | steel_defect.dataset      | DataLoaders created | train=77 batches | val=17 batches | batch_size=32
+2026-08-05 20:32:20 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:32:41 | INFO     | __main__                  | Epoch 1/50 | train_loss=1.4707 train_acc=0.315 | val_loss=1.4214 val_acc=0.318 | time=20.1s
+2026-08-05 20:32:41 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:32:58 | INFO     | __main__                  | Epoch 2/50 | train_loss=1.4199 train_acc=0.334 | val_loss=1.4149 val_acc=0.356 | time=17.4s
+2026-08-05 20:32:58 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:33:16 | INFO     | __main__                  | Epoch 3/50 | train_loss=1.3719 train_acc=0.363 | val_loss=1.3070 val_acc=0.410 | time=17.4s
+2026-08-05 20:33:16 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:33:33 | INFO     | __main__                  | Epoch 4/50 | train_loss=1.3470 train_acc=0.400 | val_loss=2.1683 val_acc=0.326 | time=17.4s
+2026-08-05 20:33:51 | INFO     | __main__                  | Epoch 5/50 | train_loss=1.3813 train_acc=0.361 | val_loss=1.2847 val_acc=0.423 | time=17.7s
+2026-08-05 20:33:51 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:34:08 | INFO     | __main__                  | Epoch 6/50 | train_loss=1.3083 train_acc=0.416 | val_loss=1.2337 val_acc=0.456 | time=17.6s
+2026-08-05 20:34:08 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:34:26 | INFO     | __main__                  | Epoch 7/50 | train_loss=1.2935 train_acc=0.430 | val_loss=1.2242 val_acc=0.469 | time=17.4s
+2026-08-05 20:34:26 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:34:43 | INFO     | __main__                  | Epoch 8/50 | train_loss=1.2954 train_acc=0.435 | val_loss=1.1906 val_acc=0.498 | time=17.5s
+2026-08-05 20:34:43 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:35:01 | INFO     | __main__                  | Epoch 9/50 | train_loss=1.2808 train_acc=0.444 | val_loss=1.2390 val_acc=0.437 | time=17.4s
+2026-08-05 20:35:18 | INFO     | __main__                  | Epoch 10/50 | train_loss=1.2733 train_acc=0.425 | val_loss=1.2719 val_acc=0.429 | time=17.4s
+2026-08-05 20:35:35 | INFO     | __main__                  | Epoch 11/50 | train_loss=1.2512 train_acc=0.441 | val_loss=1.1969 val_acc=0.490 | time=17.4s
+2026-08-05 20:35:53 | INFO     | __main__                  | Epoch 12/50 | train_loss=1.2091 train_acc=0.471 | val_loss=1.8174 val_acc=0.324 | time=17.4s
+2026-08-05 20:36:10 | INFO     | __main__                  | Epoch 13/50 | train_loss=1.2217 train_acc=0.475 | val_loss=1.1113 val_acc=0.546 | time=17.4s
+2026-08-05 20:36:10 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:36:28 | INFO     | __main__                  | Epoch 14/50 | train_loss=1.2001 train_acc=0.475 | val_loss=1.2758 val_acc=0.441 | time=17.4s
+2026-08-05 20:36:45 | INFO     | __main__                  | Epoch 15/50 | train_loss=1.1989 train_acc=0.480 | val_loss=1.1472 val_acc=0.498 | time=17.3s
+2026-08-05 20:37:02 | INFO     | __main__                  | Epoch 16/50 | train_loss=1.2159 train_acc=0.467 | val_loss=1.1113 val_acc=0.569 | time=17.4s
+2026-08-05 20:37:02 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:37:20 | INFO     | __main__                  | Epoch 17/50 | train_loss=1.1909 train_acc=0.488 | val_loss=1.2298 val_acc=0.423 | time=17.3s
+2026-08-05 20:37:37 | INFO     | __main__                  | Epoch 18/50 | train_loss=1.1816 train_acc=0.500 | val_loss=1.1113 val_acc=0.556 | time=17.5s
+2026-08-05 20:37:55 | INFO     | __main__                  | Epoch 19/50 | train_loss=1.1928 train_acc=0.498 | val_loss=1.1048 val_acc=0.540 | time=17.4s
+2026-08-05 20:38:12 | INFO     | __main__                  | Epoch 20/50 | train_loss=1.1457 train_acc=0.508 | val_loss=1.3516 val_acc=0.483 | time=17.4s
+2026-08-05 20:38:29 | INFO     | __main__                  | Epoch 21/50 | train_loss=1.1523 train_acc=0.516 | val_loss=1.1595 val_acc=0.523 | time=17.4s
+2026-08-05 20:38:47 | INFO     | __main__                  | Epoch 22/50 | train_loss=1.1258 train_acc=0.535 | val_loss=1.1705 val_acc=0.513 | time=17.4s
+2026-08-05 20:39:04 | INFO     | __main__                  | Epoch 23/50 | train_loss=1.1103 train_acc=0.523 | val_loss=1.0952 val_acc=0.613 | time=17.4s
+2026-08-05 20:39:04 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:39:22 | INFO     | __main__                  | Epoch 24/50 | train_loss=1.1156 train_acc=0.521 | val_loss=1.3303 val_acc=0.483 | time=17.4s
+2026-08-05 20:39:39 | INFO     | __main__                  | Epoch 25/50 | train_loss=1.1048 train_acc=0.547 | val_loss=1.1997 val_acc=0.510 | time=17.4s
+2026-08-05 20:39:56 | INFO     | __main__                  | Epoch 26/50 | train_loss=1.1091 train_acc=0.535 | val_loss=1.1121 val_acc=0.552 | time=17.4s
+2026-08-05 20:40:14 | INFO     | __main__                  | Epoch 27/50 | train_loss=1.0670 train_acc=0.560 | val_loss=1.1648 val_acc=0.523 | time=17.4s
+2026-08-05 20:40:31 | INFO     | __main__                  | Epoch 28/50 | train_loss=1.1346 train_acc=0.526 | val_loss=2.8614 val_acc=0.425 | time=17.3s
+2026-08-05 20:40:48 | INFO     | __main__                  | Epoch 29/50 | train_loss=1.1359 train_acc=0.531 | val_loss=1.0039 val_acc=0.605 | time=17.4s
+2026-08-05 20:41:06 | INFO     | __main__                  | Epoch 30/50 | train_loss=1.0325 train_acc=0.569 | val_loss=1.1625 val_acc=0.584 | time=17.3s
+2026-08-05 20:41:23 | INFO     | __main__                  | Epoch 31/50 | train_loss=1.0595 train_acc=0.570 | val_loss=1.1107 val_acc=0.580 | time=17.4s
+2026-08-05 20:41:41 | INFO     | __main__                  | Epoch 32/50 | train_loss=1.0517 train_acc=0.557 | val_loss=1.1910 val_acc=0.519 | time=17.4s
+2026-08-05 20:41:58 | INFO     | __main__                  | Epoch 33/50 | train_loss=1.0640 train_acc=0.568 | val_loss=1.1972 val_acc=0.561 | time=17.4s
+2026-08-05 20:42:15 | INFO     | __main__                  | Epoch 34/50 | train_loss=1.0341 train_acc=0.592 | val_loss=0.9581 val_acc=0.602 | time=17.4s
+2026-08-05 20:42:33 | INFO     | __main__                  | Epoch 35/50 | train_loss=1.0194 train_acc=0.586 | val_loss=1.2186 val_acc=0.579 | time=17.4s
+2026-08-05 20:42:50 | INFO     | __main__                  | Epoch 36/50 | train_loss=1.0046 train_acc=0.611 | val_loss=0.9341 val_acc=0.628 | time=17.3s
+2026-08-05 20:42:50 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:43:08 | INFO     | __main__                  | Epoch 37/50 | train_loss=0.9695 train_acc=0.617 | val_loss=1.1546 val_acc=0.565 | time=17.4s
+2026-08-05 20:43:25 | INFO     | __main__                  | Epoch 38/50 | train_loss=1.0435 train_acc=0.577 | val_loss=0.9600 val_acc=0.640 | time=17.4s
+2026-08-05 20:43:25 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:43:42 | INFO     | __main__                  | Epoch 39/50 | train_loss=0.9560 train_acc=0.623 | val_loss=1.5017 val_acc=0.429 | time=17.4s
+2026-08-05 20:44:00 | INFO     | __main__                  | Epoch 40/50 | train_loss=0.9897 train_acc=0.609 | val_loss=1.0274 val_acc=0.580 | time=17.4s
+2026-08-05 20:44:17 | INFO     | __main__                  | Epoch 41/50 | train_loss=0.9839 train_acc=0.605 | val_loss=1.1039 val_acc=0.580 | time=17.4s
+2026-08-05 20:44:34 | INFO     | __main__                  | Epoch 42/50 | train_loss=1.0005 train_acc=0.597 | val_loss=1.1925 val_acc=0.565 | time=17.4s
+2026-08-05 20:44:52 | INFO     | __main__                  | Epoch 43/50 | train_loss=0.9741 train_acc=0.618 | val_loss=0.9795 val_acc=0.586 | time=17.4s
+2026-08-05 20:45:09 | INFO     | __main__                  | Epoch 44/50 | train_loss=0.9336 train_acc=0.624 | val_loss=1.0063 val_acc=0.580 | time=17.4s
+2026-08-05 20:45:27 | INFO     | __main__                  | Epoch 45/50 | train_loss=0.9136 train_acc=0.645 | val_loss=1.0144 val_acc=0.634 | time=17.4s
+2026-08-05 20:45:44 | INFO     | __main__                  | Epoch 46/50 | train_loss=0.9054 train_acc=0.634 | val_loss=0.8576 val_acc=0.688 | time=17.4s
+2026-08-05 20:45:44 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:46:02 | INFO     | __main__                  | Epoch 47/50 | train_loss=0.9569 train_acc=0.647 | val_loss=1.1292 val_acc=0.596 | time=17.4s
+2026-08-05 20:46:19 | INFO     | __main__                  | Epoch 48/50 | train_loss=0.9864 train_acc=0.602 | val_loss=0.8974 val_acc=0.709 | time=17.5s
+2026-08-05 20:46:19 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:46:36 | INFO     | __main__                  | Epoch 49/50 | train_loss=0.8900 train_acc=0.655 | val_loss=2.3691 val_acc=0.467 | time=17.4s
+2026-08-05 20:46:54 | INFO     | __main__                  | Epoch 50/50 | train_loss=0.8949 train_acc=0.654 | val_loss=1.1799 val_acc=0.565 | time=17.4s
+2026-08-05 20:46:54 | INFO     | __main__                  | Training complete | time=874.6s | best_val_acc=0.709
+2026-08-05 20:52:14 | INFO     | __main__                  | ============================================================
+2026-08-05 20:52:14 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:52:14 | INFO     | __main__                  | ============================================================
+2026-08-05 20:52:14 | INFO     | __main__                  | Epochs:     100
+2026-08-05 20:52:14 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:52:14 | INFO     | __main__                  | LR:         0.001
+2026-08-05 20:52:14 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:52:14 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:52:14 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:52:14 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:52:15 | INFO     | __main__                  | Splits | train=2435 | val=522 | test=523
+2026-08-05 20:52:15 | INFO     | steel_defect.dataset      | SteelDataset created | samples=2435 | transform=yes
+2026-08-05 20:52:15 | INFO     | steel_defect.dataset      | SteelDataset created | samples=522 | transform=yes
+2026-08-05 20:52:15 | INFO     | steel_defect.dataset      | DataLoaders created | train=77 batches | val=17 batches | batch_size=32
+2026-08-05 20:52:15 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:54:07 | INFO     | __main__                  | ============================================================
+2026-08-05 20:54:07 | INFO     | __main__                  | Steel Defect CNN Training
+2026-08-05 20:54:07 | INFO     | __main__                  | ============================================================
+2026-08-05 20:54:07 | INFO     | __main__                  | Epochs:     100
+2026-08-05 20:54:07 | INFO     | __main__                  | Batch size: 32
+2026-08-05 20:54:07 | INFO     | __main__                  | LR:         0.001
+2026-08-05 20:54:07 | INFO     | __main__                  | Device:     cuda
+2026-08-05 20:54:07 | INFO     | __main__                  | Image size: (256, 256)
+2026-08-05 20:54:07 | INFO     | __main__                  | Classes:    ['no_defect', 'defect_1', 'defect_2', 'defect_3', 'defect_4']
+2026-08-05 20:54:07 | INFO     | __main__                  | Loading dataset...
+2026-08-05 20:54:07 | INFO     | __main__                  | Splits | train=8497 | val=1822 | test=1822
+2026-08-05 20:54:07 | INFO     | steel_defect.dataset      | SteelDataset created | samples=8497 | transform=yes
+2026-08-05 20:54:07 | INFO     | steel_defect.dataset      | SteelDataset created | samples=1822 | transform=yes
+2026-08-05 20:54:07 | INFO     | steel_defect.dataset      | DataLoaders created | train=266 batches | val=57 batches | batch_size=32
+2026-08-05 20:54:07 | INFO     | __main__                  | Model: SteelCNN(params=113,285)
+2026-08-05 20:55:12 | INFO     | __main__                  | Epoch 1/100 | train_loss=1.0307 train_acc=0.570 | val_loss=0.9111 val_acc=0.627 | time=63.7s
+2026-08-05 20:55:12 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:56:13 | INFO     | __main__                  | Epoch 2/100 | train_loss=0.9524 train_acc=0.598 | val_loss=0.8962 val_acc=0.622 | time=61.2s
+2026-08-05 20:57:18 | INFO     | __main__                  | Epoch 3/100 | train_loss=0.9284 train_acc=0.609 | val_loss=0.8678 val_acc=0.654 | time=65.0s
+2026-08-05 20:57:18 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:58:23 | INFO     | __main__                  | Epoch 4/100 | train_loss=0.8963 train_acc=0.635 | val_loss=0.8298 val_acc=0.670 | time=65.0s
+2026-08-05 20:58:23 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 20:59:27 | INFO     | __main__                  | Epoch 5/100 | train_loss=0.8706 train_acc=0.649 | val_loss=0.8108 val_acc=0.672 | time=64.4s
+2026-08-05 20:59:27 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:00:33 | INFO     | __main__                  | Epoch 6/100 | train_loss=0.8553 train_acc=0.655 | val_loss=0.8602 val_acc=0.611 | time=65.3s
+2026-08-05 21:01:34 | INFO     | __main__                  | Epoch 7/100 | train_loss=0.8326 train_acc=0.666 | val_loss=0.8879 val_acc=0.651 | time=60.9s
+2026-08-05 21:02:34 | INFO     | __main__                  | Epoch 8/100 | train_loss=0.8207 train_acc=0.674 | val_loss=0.7402 val_acc=0.698 | time=60.7s
+2026-08-05 21:02:34 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:03:35 | INFO     | __main__                  | Epoch 9/100 | train_loss=0.7984 train_acc=0.689 | val_loss=0.8397 val_acc=0.643 | time=60.6s
+2026-08-05 21:04:36 | INFO     | __main__                  | Epoch 10/100 | train_loss=0.7849 train_acc=0.686 | val_loss=0.8430 val_acc=0.623 | time=60.7s
+2026-08-05 21:05:36 | INFO     | __main__                  | Epoch 11/100 | train_loss=0.7802 train_acc=0.697 | val_loss=0.8679 val_acc=0.640 | time=60.9s
+2026-08-05 21:06:37 | INFO     | __main__                  | Epoch 12/100 | train_loss=0.7600 train_acc=0.702 | val_loss=0.6558 val_acc=0.755 | time=60.4s
+2026-08-05 21:06:37 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:07:38 | INFO     | __main__                  | Epoch 13/100 | train_loss=0.7351 train_acc=0.718 | val_loss=0.6918 val_acc=0.732 | time=60.9s
+2026-08-05 21:08:39 | INFO     | __main__                  | Epoch 14/100 | train_loss=0.7236 train_acc=0.722 | val_loss=0.7268 val_acc=0.692 | time=60.8s
+2026-08-05 21:09:39 | INFO     | __main__                  | Epoch 15/100 | train_loss=0.7063 train_acc=0.727 | val_loss=0.6773 val_acc=0.718 | time=60.1s
+2026-08-05 21:10:39 | INFO     | __main__                  | Epoch 16/100 | train_loss=0.6884 train_acc=0.732 | val_loss=0.6492 val_acc=0.742 | time=60.2s
+2026-08-05 21:11:40 | INFO     | __main__                  | Epoch 17/100 | train_loss=0.6943 train_acc=0.731 | val_loss=0.9377 val_acc=0.656 | time=60.8s
+2026-08-05 21:12:40 | INFO     | __main__                  | Epoch 18/100 | train_loss=0.6620 train_acc=0.744 | val_loss=0.6095 val_acc=0.790 | time=60.6s
+2026-08-05 21:12:40 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:13:41 | INFO     | __main__                  | Epoch 19/100 | train_loss=0.6538 train_acc=0.751 | val_loss=0.7363 val_acc=0.694 | time=60.6s
+2026-08-05 21:14:41 | INFO     | __main__                  | Epoch 20/100 | train_loss=0.6290 train_acc=0.762 | val_loss=0.7358 val_acc=0.702 | time=60.7s
+2026-08-05 21:15:42 | INFO     | __main__                  | Epoch 21/100 | train_loss=0.6253 train_acc=0.761 | val_loss=0.5310 val_acc=0.809 | time=60.7s
+2026-08-05 21:15:42 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:16:43 | INFO     | __main__                  | Epoch 22/100 | train_loss=0.6071 train_acc=0.772 | val_loss=0.6474 val_acc=0.714 | time=60.7s
+2026-08-05 21:17:43 | INFO     | __main__                  | Epoch 23/100 | train_loss=0.6039 train_acc=0.770 | val_loss=0.6222 val_acc=0.737 | time=60.6s
+2026-08-05 21:18:44 | INFO     | __main__                  | Epoch 24/100 | train_loss=0.5848 train_acc=0.783 | val_loss=0.5462 val_acc=0.792 | time=60.7s
+2026-08-05 21:19:45 | INFO     | __main__                  | Epoch 25/100 | train_loss=0.5760 train_acc=0.781 | val_loss=0.6469 val_acc=0.750 | time=60.7s
+2026-08-05 21:20:46 | INFO     | __main__                  | Epoch 26/100 | train_loss=0.5759 train_acc=0.784 | val_loss=0.5860 val_acc=0.786 | time=60.7s
+2026-08-05 21:21:46 | INFO     | __main__                  | Epoch 27/100 | train_loss=0.5689 train_acc=0.787 | val_loss=0.6542 val_acc=0.768 | time=60.6s
+2026-08-05 21:22:47 | INFO     | __main__                  | Epoch 28/100 | train_loss=0.5595 train_acc=0.792 | val_loss=0.6553 val_acc=0.742 | time=60.7s
+2026-08-05 21:23:48 | INFO     | __main__                  | Epoch 29/100 | train_loss=0.5682 train_acc=0.792 | val_loss=0.5103 val_acc=0.822 | time=60.7s
+2026-08-05 21:23:48 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:24:48 | INFO     | __main__                  | Epoch 30/100 | train_loss=0.5403 train_acc=0.802 | val_loss=0.4865 val_acc=0.839 | time=60.7s
+2026-08-05 21:24:48 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:25:49 | INFO     | __main__                  | Epoch 31/100 | train_loss=0.5345 train_acc=0.801 | val_loss=0.5213 val_acc=0.821 | time=60.7s
+2026-08-05 21:26:50 | INFO     | __main__                  | Epoch 32/100 | train_loss=0.5356 train_acc=0.804 | val_loss=0.4963 val_acc=0.840 | time=60.7s
+2026-08-05 21:26:50 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:27:50 | INFO     | __main__                  | Epoch 33/100 | train_loss=0.5236 train_acc=0.808 | val_loss=0.5507 val_acc=0.790 | time=60.6s
+2026-08-05 21:28:51 | INFO     | __main__                  | Epoch 34/100 | train_loss=0.5254 train_acc=0.807 | val_loss=0.4422 val_acc=0.853 | time=60.7s
+2026-08-05 21:28:51 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:29:52 | INFO     | __main__                  | Epoch 35/100 | train_loss=0.5101 train_acc=0.817 | val_loss=0.5165 val_acc=0.800 | time=60.7s
+2026-08-05 21:30:52 | INFO     | __main__                  | Epoch 36/100 | train_loss=0.5026 train_acc=0.818 | val_loss=0.6370 val_acc=0.817 | time=60.6s
+2026-08-05 21:31:53 | INFO     | __main__                  | Epoch 37/100 | train_loss=0.4969 train_acc=0.817 | val_loss=0.4751 val_acc=0.825 | time=60.7s
+2026-08-05 21:32:54 | INFO     | __main__                  | Epoch 38/100 | train_loss=0.4924 train_acc=0.824 | val_loss=0.6989 val_acc=0.724 | time=60.7s
+2026-08-05 21:33:54 | INFO     | __main__                  | Epoch 39/100 | train_loss=0.4889 train_acc=0.825 | val_loss=0.4441 val_acc=0.838 | time=60.7s
+2026-08-05 21:34:55 | INFO     | __main__                  | Epoch 40/100 | train_loss=0.4804 train_acc=0.829 | val_loss=0.5028 val_acc=0.828 | time=60.6s
+2026-08-05 21:35:56 | INFO     | __main__                  | Epoch 41/100 | train_loss=0.4837 train_acc=0.823 | val_loss=0.5137 val_acc=0.790 | time=60.7s
+2026-08-05 21:36:56 | INFO     | __main__                  | Epoch 42/100 | train_loss=0.4728 train_acc=0.832 | val_loss=0.5434 val_acc=0.799 | time=60.8s
+2026-08-05 21:37:57 | INFO     | __main__                  | Epoch 43/100 | train_loss=0.4592 train_acc=0.837 | val_loss=0.4414 val_acc=0.853 | time=60.6s
+2026-08-05 21:38:58 | INFO     | __main__                  | Epoch 44/100 | train_loss=0.4571 train_acc=0.838 | val_loss=0.5577 val_acc=0.785 | time=60.7s
+2026-08-05 21:39:58 | INFO     | __main__                  | Epoch 45/100 | train_loss=0.4615 train_acc=0.836 | val_loss=0.5102 val_acc=0.812 | time=60.6s
+2026-08-05 21:40:59 | INFO     | __main__                  | Epoch 46/100 | train_loss=0.4591 train_acc=0.838 | val_loss=0.5301 val_acc=0.790 | time=60.7s
+2026-08-05 21:42:00 | INFO     | __main__                  | Epoch 47/100 | train_loss=0.4414 train_acc=0.842 | val_loss=0.4360 val_acc=0.845 | time=60.7s
+2026-08-05 21:43:00 | INFO     | __main__                  | Epoch 48/100 | train_loss=0.4379 train_acc=0.842 | val_loss=0.8728 val_acc=0.678 | time=60.7s
+2026-08-05 21:44:01 | INFO     | __main__                  | Epoch 49/100 | train_loss=0.4357 train_acc=0.846 | val_loss=0.8618 val_acc=0.765 | time=60.9s
+2026-08-05 21:45:02 | INFO     | __main__                  | Epoch 50/100 | train_loss=0.4346 train_acc=0.844 | val_loss=0.4919 val_acc=0.811 | time=60.6s
+2026-08-05 21:46:03 | INFO     | __main__                  | Epoch 51/100 | train_loss=0.4181 train_acc=0.847 | val_loss=0.4167 val_acc=0.847 | time=60.7s
+2026-08-05 21:47:03 | INFO     | __main__                  | Epoch 52/100 | train_loss=0.4154 train_acc=0.855 | val_loss=0.3830 val_acc=0.864 | time=60.6s
+2026-08-05 21:47:03 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:48:04 | INFO     | __main__                  | Epoch 53/100 | train_loss=0.4204 train_acc=0.848 | val_loss=0.3889 val_acc=0.869 | time=60.7s
+2026-08-05 21:48:04 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:49:04 | INFO     | __main__                  | Epoch 54/100 | train_loss=0.4190 train_acc=0.849 | val_loss=0.4777 val_acc=0.838 | time=60.4s
+2026-08-05 21:50:05 | INFO     | __main__                  | Epoch 55/100 | train_loss=0.4150 train_acc=0.850 | val_loss=0.3698 val_acc=0.880 | time=60.1s
+2026-08-05 21:50:05 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 21:51:05 | INFO     | __main__                  | Epoch 56/100 | train_loss=0.4045 train_acc=0.854 | val_loss=0.4839 val_acc=0.835 | time=60.0s
+2026-08-05 21:52:05 | INFO     | __main__                  | Epoch 57/100 | train_loss=0.4047 train_acc=0.857 | val_loss=0.5193 val_acc=0.817 | time=60.1s
+2026-08-05 21:53:05 | INFO     | __main__                  | Epoch 58/100 | train_loss=0.4118 train_acc=0.849 | val_loss=0.4035 val_acc=0.870 | time=60.0s
+2026-08-05 21:54:05 | INFO     | __main__                  | Epoch 59/100 | train_loss=0.4118 train_acc=0.856 | val_loss=0.4312 val_acc=0.859 | time=60.1s
+2026-08-05 21:55:05 | INFO     | __main__                  | Epoch 60/100 | train_loss=0.3978 train_acc=0.862 | val_loss=0.7306 val_acc=0.761 | time=60.0s
+2026-08-05 21:56:05 | INFO     | __main__                  | Epoch 61/100 | train_loss=0.3900 train_acc=0.866 | val_loss=0.4972 val_acc=0.825 | time=60.2s
+2026-08-05 21:57:05 | INFO     | __main__                  | Epoch 62/100 | train_loss=0.4005 train_acc=0.862 | val_loss=0.8169 val_acc=0.746 | time=60.0s
+2026-08-05 21:58:05 | INFO     | __main__                  | Epoch 63/100 | train_loss=0.3866 train_acc=0.862 | val_loss=0.5890 val_acc=0.790 | time=60.0s
+2026-08-05 21:59:05 | INFO     | __main__                  | Epoch 64/100 | train_loss=0.3860 train_acc=0.865 | val_loss=0.3972 val_acc=0.866 | time=60.0s
+2026-08-05 22:00:05 | INFO     | __main__                  | Epoch 65/100 | train_loss=0.3791 train_acc=0.869 | val_loss=0.7226 val_acc=0.776 | time=60.1s
+2026-08-05 22:01:05 | INFO     | __main__                  | Epoch 66/100 | train_loss=0.3791 train_acc=0.867 | val_loss=0.3793 val_acc=0.867 | time=60.0s
+2026-08-05 22:02:05 | INFO     | __main__                  | Epoch 67/100 | train_loss=0.3765 train_acc=0.867 | val_loss=0.4373 val_acc=0.844 | time=60.1s
+2026-08-05 22:03:06 | INFO     | __main__                  | Epoch 68/100 | train_loss=0.3854 train_acc=0.865 | val_loss=0.5424 val_acc=0.803 | time=60.2s
+2026-08-05 22:04:06 | INFO     | __main__                  | Epoch 69/100 | train_loss=0.3701 train_acc=0.869 | val_loss=0.3480 val_acc=0.884 | time=60.0s
+2026-08-05 22:04:06 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:05:06 | INFO     | __main__                  | Epoch 70/100 | train_loss=0.3693 train_acc=0.867 | val_loss=0.3491 val_acc=0.884 | time=60.1s
+2026-08-05 22:05:06 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:06:06 | INFO     | __main__                  | Epoch 71/100 | train_loss=0.3604 train_acc=0.873 | val_loss=0.5058 val_acc=0.831 | time=60.2s
+2026-08-05 22:07:06 | INFO     | __main__                  | Epoch 72/100 | train_loss=0.3736 train_acc=0.873 | val_loss=0.8420 val_acc=0.761 | time=60.2s
+2026-08-05 22:08:06 | INFO     | __main__                  | Epoch 73/100 | train_loss=0.3671 train_acc=0.866 | val_loss=0.3977 val_acc=0.869 | time=60.1s
+2026-08-05 22:09:06 | INFO     | __main__                  | Epoch 74/100 | train_loss=0.3581 train_acc=0.874 | val_loss=0.3753 val_acc=0.880 | time=60.1s
+2026-08-05 22:10:06 | INFO     | __main__                  | Epoch 75/100 | train_loss=0.3603 train_acc=0.872 | val_loss=0.4454 val_acc=0.856 | time=60.1s
+2026-08-05 22:11:06 | INFO     | __main__                  | Epoch 76/100 | train_loss=0.3597 train_acc=0.877 | val_loss=1.4505 val_acc=0.666 | time=60.1s
+2026-08-05 22:12:07 | INFO     | __main__                  | Epoch 77/100 | train_loss=0.3572 train_acc=0.874 | val_loss=0.3976 val_acc=0.861 | time=60.1s
+2026-08-05 22:13:07 | INFO     | __main__                  | Epoch 78/100 | train_loss=0.3507 train_acc=0.875 | val_loss=0.4420 val_acc=0.839 | time=60.1s
+2026-08-05 22:14:07 | INFO     | __main__                  | Epoch 79/100 | train_loss=0.3503 train_acc=0.876 | val_loss=0.3327 val_acc=0.887 | time=60.1s
+2026-08-05 22:14:07 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:15:07 | INFO     | __main__                  | Epoch 80/100 | train_loss=0.3545 train_acc=0.875 | val_loss=0.5219 val_acc=0.800 | time=60.1s
+2026-08-05 22:16:07 | INFO     | __main__                  | Epoch 81/100 | train_loss=0.3523 train_acc=0.876 | val_loss=0.3267 val_acc=0.892 | time=60.1s
+2026-08-05 22:16:07 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:17:07 | INFO     | __main__                  | Epoch 82/100 | train_loss=0.3456 train_acc=0.880 | val_loss=0.5736 val_acc=0.820 | time=60.2s
+2026-08-05 22:18:07 | INFO     | __main__                  | Epoch 83/100 | train_loss=0.3544 train_acc=0.872 | val_loss=0.4854 val_acc=0.830 | time=60.1s
+2026-08-05 22:19:07 | INFO     | __main__                  | Epoch 84/100 | train_loss=0.3384 train_acc=0.879 | val_loss=0.3812 val_acc=0.873 | time=60.2s
+2026-08-05 22:20:08 | INFO     | __main__                  | Epoch 85/100 | train_loss=0.3352 train_acc=0.881 | val_loss=0.3718 val_acc=0.874 | time=60.1s
+2026-08-05 22:21:08 | INFO     | __main__                  | Epoch 86/100 | train_loss=0.3312 train_acc=0.882 | val_loss=0.3215 val_acc=0.890 | time=60.2s
+2026-08-05 22:22:08 | INFO     | __main__                  | Epoch 87/100 | train_loss=0.3317 train_acc=0.883 | val_loss=0.4345 val_acc=0.862 | time=60.1s
+2026-08-05 22:23:08 | INFO     | __main__                  | Epoch 88/100 | train_loss=0.3229 train_acc=0.887 | val_loss=0.3238 val_acc=0.898 | time=60.1s
+2026-08-05 22:23:08 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:24:08 | INFO     | __main__                  | Epoch 89/100 | train_loss=0.3305 train_acc=0.884 | val_loss=0.5573 val_acc=0.811 | time=60.1s
+2026-08-05 22:25:08 | INFO     | __main__                  | Epoch 90/100 | train_loss=0.3249 train_acc=0.884 | val_loss=0.5173 val_acc=0.835 | time=60.0s
+2026-08-05 22:26:08 | INFO     | __main__                  | Epoch 91/100 | train_loss=0.3226 train_acc=0.889 | val_loss=0.3224 val_acc=0.884 | time=60.2s
+2026-08-05 22:27:09 | INFO     | __main__                  | Epoch 92/100 | train_loss=0.3332 train_acc=0.881 | val_loss=0.3898 val_acc=0.873 | time=60.2s
+2026-08-05 22:28:09 | INFO     | __main__                  | Epoch 93/100 | train_loss=0.3292 train_acc=0.882 | val_loss=0.3677 val_acc=0.868 | time=60.1s
+2026-08-05 22:29:09 | INFO     | __main__                  | Epoch 94/100 | train_loss=0.3149 train_acc=0.890 | val_loss=0.3039 val_acc=0.907 | time=60.2s
+2026-08-05 22:29:09 | INFO     | __main__                  | Saved best model on => C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt
+2026-08-05 22:30:09 | INFO     | __main__                  | Epoch 95/100 | train_loss=0.3182 train_acc=0.889 | val_loss=0.4148 val_acc=0.863 | time=60.2s
+2026-08-05 22:31:09 | INFO     | __main__                  | Epoch 96/100 | train_loss=0.3270 train_acc=0.883 | val_loss=0.3708 val_acc=0.872 | time=60.1s
+2026-08-05 22:32:09 | INFO     | __main__                  | Epoch 97/100 | train_loss=0.3202 train_acc=0.885 | val_loss=0.3357 val_acc=0.887 | time=60.1s
+2026-08-05 22:33:10 | INFO     | __main__                  | Epoch 98/100 | train_loss=0.3096 train_acc=0.892 | val_loss=0.3671 val_acc=0.881 | time=60.2s
+2026-08-05 22:34:10 | INFO     | __main__                  | Epoch 99/100 | train_loss=0.3084 train_acc=0.891 | val_loss=0.3303 val_acc=0.890 | time=60.2s
+2026-08-05 22:35:10 | INFO     | __main__                  | Epoch 100/100 | train_loss=0.3016 train_acc=0.897 | val_loss=0.3569 val_acc=0.878 | time=60.1s
+2026-08-05 22:35:10 | INFO     | __main__                  | Training complete | time=6063.3s | best_val_acc=0.907
+2026-08-05 22:37:12 | INFO     | steel_defect.inference    | SteelPredictor initialized | checkpoint=C:\Personal Projects\Anomaly_Detection\final_project\models\steel_cnn_best.pt | device=cuda
+2026-08-05 22:37:12 | INFO     | steel_defect.inference    | Model loaded | time=102ms
+2026-08-05 22:37:14 | INFO     | steel_defect.inference    | Inference #1 | label=defect_1 | confidence=0.960 | time=98.3ms
+2026-08-05 22:37:16 | INFO     | steel_defect.inference    | Inference #2 | label=defect_3 | confidence=0.444 | time=3.0ms
+2026-08-05 22:37:17 | INFO     | steel_defect.inference    | Inference #3 | label=defect_1 | confidence=0.885 | time=2.8ms
+2026-08-05 22:37:19 | INFO     | steel_defect.inference    | Inference #4 | label=defect_1 | confidence=0.983 | time=2.8ms
+2026-08-05 22:37:20 | INFO     | steel_defect.inference    | Inference #5 | label=defect_1 | confidence=0.960 | time=16.5ms
+2026-08-05 22:37:22 | INFO     | steel_defect.inference    | Inference #6 | label=defect_1 | confidence=0.647 | time=16.6ms
+2026-08-05 22:37:24 | INFO     | steel_defect.inference    | Inference #7 | label=defect_3 | confidence=0.547 | time=16.4ms
+2026-08-05 22:37:25 | INFO     | steel_defect.inference    | Inference #8 | label=defect_1 | confidence=0.961 | time=16.3ms
+2026-08-05 22:37:27 | INFO     | steel_defect.inference    | Inference #9 | label=defect_1 | confidence=0.577 | time=16.1ms
+2026-08-05 22:37:28 | INFO     | steel_defect.inference    | Inference #10 | label=defect_1 | confidence=0.601 | time=16.2ms
+2026-08-05 22:37:30 | INFO     | steel_defect.inference    | Inference #11 | label=defect_1 | confidence=0.721 | time=15.8ms
+2026-08-05 22:37:31 | INFO     | steel_defect.inference    | Inference #12 | label=defect_1 | confidence=0.662 | time=16.6ms
+2026-08-05 22:37:33 | INFO     | steel_defect.inference    | Inference #13 | label=no_defect | confidence=0.950 | time=23.0ms
+2026-08-05 22:37:35 | INFO     | steel_defect.inference    | Inference #14 | label=defect_1 | confidence=0.945 | time=26.3ms
+2026-08-05 22:37:41 | INFO     | steel_defect.inference    | Inference #15 | label=defect_3 | confidence=0.997 | time=35.1ms
+2026-08-05 22:37:43 | INFO     | steel_defect.inference    | Inference #16 | label=defect_3 | confidence=0.957 | time=16.7ms
+2026-08-05 22:37:44 | INFO     | steel_defect.inference    | Inference #17 | label=no_defect | confidence=0.620 | time=16.5ms
+2026-08-05 22:37:46 | INFO     | steel_defect.inference    | Inference #18 | label=defect_3 | confidence=1.000 | time=16.1ms
+2026-08-05 22:37:47 | INFO     | steel_defect.inference    | Inference #19 | label=defect_3 | confidence=0.743 | time=16.7ms
+2026-08-05 22:37:49 | INFO     | steel_defect.inference    | Inference #20 | label=defect_3 | confidence=1.000 | time=17.9ms
+2026-08-05 22:37:50 | INFO     | steel_defect.inference    | Inference #21 | label=defect_3 | confidence=1.000 | time=18.0ms
+2026-08-05 22:37:52 | INFO     | steel_defect.inference    | Inference #22 | label=defect_3 | confidence=0.701 | time=17.1ms
+2026-08-05 22:37:54 | INFO     | steel_defect.inference    | Inference #23 | label=no_defect | confidence=0.904 | time=18.1ms
+2026-08-05 22:37:55 | INFO     | steel_defect.inference    | Inference #24 | label=defect_3 | confidence=0.995 | time=16.3ms
+2026-08-05 22:37:57 | INFO     | steel_defect.inference    | Inference #25 | label=defect_3 | confidence=0.665 | time=21.0ms
+2026-08-05 22:37:58 | INFO     | steel_defect.inference    | Inference #26 | label=defect_3 | confidence=0.504 | time=24.0ms
+2026-08-05 22:38:00 | INFO     | steel_defect.inference    | Inference #27 | label=defect_3 | confidence=0.997 | time=32.2ms
+2026-08-05 22:38:02 | INFO     | steel_defect.inference    | Inference #28 | label=defect_3 | confidence=0.944 | time=21.2ms
+2026-08-05 22:38:03 | INFO     | steel_defect.inference    | Inference #29 | label=defect_3 | confidence=0.695 | time=21.3ms
+2026-08-05 22:38:05 | INFO     | steel_defect.inference    | Inference #30 | label=defect_3 | confidence=0.998 | time=16.6ms
+2026-08-05 22:38:07 | INFO     | steel_defect.inference    | Inference #31 | label=defect_3 | confidence=0.885 | time=16.8ms
+2026-08-05 22:38:08 | INFO     | steel_defect.inference    | Inference #32 | label=defect_3 | confidence=1.000 | time=21.3ms
+2026-08-05 22:38:10 | INFO     | steel_defect.inference    | Inference #33 | label=defect_3 | confidence=0.652 | time=21.1ms
+2026-08-05 22:38:11 | INFO     | steel_defect.inference    | Inference #34 | label=defect_3 | confidence=0.677 | time=21.1ms
+2026-08-05 22:38:13 | INFO     | steel_defect.inference    | Inference #35 | label=defect_3 | confidence=0.950 | time=21.0ms
+2026-08-05 22:38:15 | INFO     | steel_defect.inference    | Inference #36 | label=defect_3 | confidence=0.574 | time=20.7ms
